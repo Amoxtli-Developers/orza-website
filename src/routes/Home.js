@@ -1,12 +1,12 @@
-import React from 'react';
-import Menu from '../components/Menu';
+import React from "react";
+import Menu from "../components/Menu/Menu";
 
 function Home() {
   return (
-    <div>
-      <Menu /> {/* Aquí está incluido tu componente Menu */}
-      <h1>Home</h1> {/* El contenido existente de tu página Home */}
-    </div>
+    <>
+      <Menu />
+      <h1>Home</h1>
+    </>
   );
 }
 
