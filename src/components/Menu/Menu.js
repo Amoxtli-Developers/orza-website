@@ -1,27 +1,27 @@
 import React, { useState } from 'react';
-import "../components/menu.css"; 
+import './Menu.css';
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Función para abrir el menu
-  const openMenu = () => setIsOpen(true);
-
-  // Función para cerrar el menu
-  const closeMenu = () => setIsOpen(false);
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
     <div className={`menu-container ${isOpen ? 'open' : ''}`}>
-      <div className="menu-header">
+      <div className={`menu-header ${isOpen ? 'open' : ''}`}>
         <h1>OZRA</h1>
-        <div className="menu-button-container">
-          <button 
-            className="menu-button" 
-            onMouseEnter={openMenu} 
-            onMouseLeave={closeMenu}
-          >
-            Home
-          </button>
+        <div className="menu-button-container" onClick={toggleMenu}>
+          {isOpen ? (
+            <>
+              <span>Close</span>
+              <button className="menu-button"></button>
+            </>
+          ) : (
+            <>
+              <span>Home</span>
+              <button className="menu-button"></button>
+            </>
+          )}
         </div>
       </div>
       {isOpen && (
@@ -44,5 +44,4 @@ const Menu = () => {
 };
 
 export default Menu;
-
 

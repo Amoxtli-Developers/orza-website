@@ -1,11 +1,11 @@
 import React from "react";
-import Menu from "../components/menu.js";
-import Header from "../components/Header/Header.js";
+import Menu from "../components/Menu/Menu";
+
 function Home() {
   return (
     <>
-
-      <Header />
+      <Menu />
+      <h1>Home</h1>
     </>
   );
 }
