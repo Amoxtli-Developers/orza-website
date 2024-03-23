@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 export default function TeamCard({ image, title, description }) {
   return (
     <Card sx={{ maxWidth: 300, borderRadius: "20px" }}>
-      <CardMedia component="img" height="200" image={image} alt={title} />
+      <CardMedia component="img" height="300" image={image} alt={title} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {title}

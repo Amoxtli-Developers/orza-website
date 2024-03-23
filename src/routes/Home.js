@@ -5,11 +5,13 @@ import Header2 from "../components/Header2/Header2";
 import { Box } from "@mui/material";
 
 import placeholderA11 from "../assets/images/placeholder-a11.jpeg";
-import TeamCarousel from "../components/TeamCarousel/TeamCarousel";
+import { TeamCarousel } from '../components/TeamCarousel/TeamCarousel';
+
 import Title from "../components/Title/Title";
 import Footer from "../components/Footer/Footer";
 
 function Home() {
+
   return (
     <>
       <Menu />
@@ -39,7 +41,7 @@ function Home() {
 
       <Header2 />
       <Title />
-      <TeamCarousel />
+      <TeamCarousel  />
       <Footer />
     </>
   );

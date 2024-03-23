@@ -8,7 +8,7 @@ const Title = () => {
       sx={{
         gap: "8px",
         textAlign: "center",
-        padding: { xs: 2, sm: 5, md: 10 }, // Responsive padding
+        padding: { xs: 2, sm: 5, md: 5 }, // Responsive padding
         paddingBottom: { xs: 2.5, sm: 5 }, // Adjust paddingBottom for smaller devices
       }}
     >
