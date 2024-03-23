@@ -1,0 +1,70 @@
+/* TeamCarousel.css */
+.carousel-container {
+    padding: 0 60px; /* Adjust the padding as needed */
+  }
+  
+  .slick-slider {
+    position: relative;
+    display: block;
+    user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .slick-center .TeamCard {
+    transform: scale(1.1); /* Scale up the active card */
+    z-index: 1; /* Make sure it's above the other cards */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+  }
+  
+  .slick-slide {
+    opacity: 0.8; /* Dim the side slides */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for dimming */
+  }
+  
+  /* Style adjustments for the previous and next buttons */
+  .slick-prev,
+  .slick-next {
+    z-index: 2;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+  }
+  
+  .slick-prev {
+    left: -25px;
+  }
+  
+  .slick-next {
+    right: -25px;
+  }
+  
+  /* Add content for the arrows if needed */
+  .slick-prev:before,
+  .slick-next:before {
+    opacity: 0.75;
+    color: black;
+    font-size: 20px;
+    line-height: 1;
+  }
+  
+  .slick-prev:before {
+    content: '←'; /* Left arrow */
+  }
+  
+  .slick-next:before {
+    content: '→'; /* Right arrow */
+  }
+  
+  @media (max-width: 768px) {
+    .slick-prev {
+      left: 10px;
+    }
+  
+    .slick-next {
+      right: 10px;
+    }
+  }
+  
