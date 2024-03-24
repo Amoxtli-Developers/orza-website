@@ -1,3 +1,18 @@
+/* Estilos para las tarjetas */
+.TeamCard {
+  transition: transform 0.3s ease;
+}
+
+/* Efecto de hover para todas las tarjetas */
+.TeamCard:hover {
+  transform: scale(1.05); /* Aumentar el tamaño de la tarjeta al hacer hover */
+}
+
+/* Estilos específicos para la tarjeta central */
+.slide-container:nth-child(2) .TeamCard:hover {
+  transform: none; /* Eliminar el efecto de hover para la tarjeta central */
+}
+
 .slick-slide {
   transition: all 0.3s ease; /* Suaviza la transición */
 }
@@ -23,6 +38,12 @@
   margin: 0 auto; /* Centra el carrusel en su contenedor */
 }
 
+.slide-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   .contenedor-del-carrusel {
     overflow: visible;
@@ -33,3 +54,4 @@
     transform: scale(1.03); /* Menor escalamiento para pantallas más pequeñas */
   }
 }
+

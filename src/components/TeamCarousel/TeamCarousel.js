@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./TeamCarousel.css";
 import { styled } from "@mui/system";
+import { Grid } from "@mui/material";
 
 export const TeamCarousel = () => {
   const StyledBox = styled("div")({
@@ -14,36 +15,39 @@ export const TeamCarousel = () => {
   });
   const teamMembers = [
     {
-      image: "path/to/image1.jpg",
+      image: "https://media.istockphoto.com/id/931643150/vector/picture-icon.jpg?s=612x612&w=0&k=20&c=St-gpRn58eIa8EDAHpn_yO4CZZAnGD6wKpln9l3Z3Ok=",
       title: "Member 1",
       description: "This is a description for member 1.",
     },
     {
-      image: "path/to/image2.jpg",
+      image: "https://media.istockphoto.com/id/931643150/vector/picture-icon.jpg?s=612x612&w=0&k=20&c=St-gpRn58eIa8EDAHpn_yO4CZZAnGD6wKpln9l3Z3Ok=",
       title: "Member 2",
       description: "This is a description for member 2.",
     },
     {
-      image: "path/to/image2.jpg",
+      image: "https://media.istockphoto.com/id/931643150/vector/picture-icon.jpg?s=612x612&w=0&k=20&c=St-gpRn58eIa8EDAHpn_yO4CZZAnGD6wKpln9l3Z3Ok=",
       title: "Member 2",
       description: "This is a description for member 2.",
     },
     {
-      image: "path/to/image2.jpg",
+      image: "https://media.istockphoto.com/id/931643150/vector/picture-icon.jpg?s=612x612&w=0&k=20&c=St-gpRn58eIa8EDAHpn_yO4CZZAnGD6wKpln9l3Z3Ok=",
       title: "Member 2",
       description: "This is a description for member 2.",
     },
     {
-      image: "path/to/image2.jpg",
+      image: "https://media.istockphoto.com/id/931643150/vector/picture-icon.jpg?s=612x612&w=0&k=20&c=St-gpRn58eIa8EDAHpn_yO4CZZAnGD6wKpln9l3Z3Ok=",
       title: "Member 2",
       description: "This is a description for member 2.",
     },
     {
-      image: "path/to/image2.jpg",
+      image: "https://media.istockphoto.com/id/931643150/vector/picture-icon.jpg?s=612x612&w=0&k=20&c=St-gpRn58eIa8EDAHpn_yO4CZZAnGD6wKpln9l3Z3Ok=",
       title: "Member 2",
       description: "This is a description for member 2.",
     },
   ];
+  
+  // Añadir estado para identificar el índice del slide central
+  const [centerSlide, setCenterSlide] = React.useState(0);
 
   // Configuraciones para react-slick
   const settings = {
@@ -52,7 +56,6 @@ export const TeamCarousel = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    centerMode: true, // Habilita el modo de centrado
     autoplay: true,
     focusOnSelect: true,
     responsive: [
@@ -73,21 +76,39 @@ export const TeamCarousel = () => {
         },
       },
     ],
+    beforeChange: (current, next) => {
+      // Si 'slidesToShow' es 3, entonces el slide del centro es 'next + 1'
+      const centerIndex = next + 1; // Ajusta esto según cómo 'react-slick' calcula tu índice actual
+      setCenterSlide(centerIndex);
+    },
   };
 
   return (
-    <div className="slider-container">
+    <Grid
+      container
+      spacing={2}
+      alignItems="center"
+      sx={{ padding: { xs: 2, sm: 5, md: 10 } }}
+    >
       <Slider {...settings}>
         {teamMembers.map((member, index) => (
-          <StyledBox key={index}>
-            <TeamCard
-              image={member.image}
-              title={member.title}
-              description={member.description}
-            />
-          </StyledBox>
+          <div className="slide-container" key={index}>
+            {/* Aplicar estilos condicionalmente para la tarjeta central */}
+            <StyledBox
+              style={{
+                transform: centerSlide === index ? 'scale(1.1)' : 'scale(1)',
+                transition: 'transform 0.3s',
+              }}
+            >
+              <TeamCard
+                image={member.image}
+                title={member.title}
+                description={member.description}
+              />
+            </StyledBox>
+          </div>
         ))}
       </Slider>
-    </div>
+    </Grid>
   );
 };
