@@ -150,3 +150,39 @@
 .menu-header.open .menu-button-container span { 
   color: #EDE8E6; 
 }
+
+
+
+
+
+/* Menu RESPONSIVE */
+@media (max-width: 768px) {
+  .menu-header h1 {
+    margin-left: 1rem; 
+  }
+
+  .menu-button-container span {
+    font-size: 1rem; 
+  }
+
+  .menu-item {
+    font-size: 40px;
+    padding: 0.5rem; 
+  }
+
+  .menu-footer {
+    margin-left: 0; 
+    padding: 1rem; 
+    text-align: center;
+  }
+
+  .menu-list {
+    grid-template-columns: 1fr; 
+  }
+
+  
+  .menu-list::before, .menu-list::after {
+    content: none; /* se eliminan las lineas azules */
+  }
+}
+
