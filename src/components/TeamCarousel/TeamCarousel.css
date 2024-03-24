@@ -1,0 +1,35 @@
+.slick-slide {
+  transition: all 0.3s ease; /* Suaviza la transición */
+}
+
+.slick-center {
+  transform: scale(
+    1.3
+  ); /* Ajusta esto para evitar que se corte por los bordes */
+}
+
+.slick-slider {
+  width: 100%;
+  margin: 0 auto; /* Centra el carrusel en su contenedor */
+}
+
+/* Opcional: oscurecer las diapositivas no centrales para enfocar más en la central */
+.slick-slide:not(.slick-center) {
+  opacity: 0.8; /* Haz las diapositivas no centrales más transparentes */
+}
+
+.slick-list {
+  padding: 70px 10px !important; /* Ajusta esto para evitar que se corte por los bordes */
+  margin: 0 auto; /* Centra el carrusel en su contenedor */
+}
+
+@media (max-width: 768px) {
+  .contenedor-del-carrusel {
+    overflow: visible;
+    padding: 15px 0;
+  }
+
+  .slick-center {
+    transform: scale(1.03); /* Menor escalamiento para pantallas más pequeñas */
+  }
+}
