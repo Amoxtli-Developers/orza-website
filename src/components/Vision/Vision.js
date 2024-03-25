@@ -26,7 +26,7 @@ const Vision = () => {
       alignItems: 'center', 
       mt: 4, 
       p: 3
-    }}>
+    }} id="vision">
       <Box sx={{ 
         flex: 1, 
         display: 'flex', 

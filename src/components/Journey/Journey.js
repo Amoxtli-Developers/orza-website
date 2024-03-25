@@ -4,24 +4,16 @@ import { ArrowBackIosNew as ArrowBackIosNewIcon, ArrowForwardIos as ArrowForward
 
 
 const slides = [
-  {
-    label: 'First slide label',
-    description: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
+  { 
     imgPath: '/A3.JPG',
   },
   {
-    label: 'Second slide label',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     imgPath: '/A5.JPG',
   },
   {
-    label: 'Third slide label',
-    description: 'Praesent commodo cursus magna, vel scelerisque nisl consectetur.',
     imgPath: '/A4.jpg',
   },
   {
-    label: 'Fourth slide label',
-    description: 'Praesent commodo cursus magna, vel scelerisque nisl consectetur.',
     imgPath: '/A6.JPG',
   },
 ];
@@ -87,16 +79,17 @@ export default function Journey() {
           fontWeight: "bold",
           fontSize: { xs: "2.5rem", sm: "4rem", md: "6rem", lg: "100px" },
           textAlign: { xs: "center", md: "left" },
-          marginLeft: { xs: 3, sm: 10 },
+          ml: { xs: 3, sm: 7 },
           position: 'relative', 
           '&:after': { 
-              content: '""',
-              position: 'absolute',
-              bottom: -10, 
-              left: '0px',
-              width: '22%', 
-              borderBottom: `10px solid ${underlineColor}`,
-              transition: 'width .3s',
+            content: '""',
+            position: 'absolute',
+            bottom: -10, 
+            left: { xs: '50%', md: '0' },
+            transform: { xs: 'translateX(-50%)', md: 'none' },
+            width: '22%', 
+            borderBottom: `10px solid ${underlineColor}`,
+            transition: 'width .3s',
           }
         }}
       >
@@ -106,11 +99,12 @@ export default function Journey() {
         variant="body1"
         sx={{
           fontSize: { xs: "1rem", sm: "1.25rem", md: "1.5rem", lg: "1.75rem" },
-          paddingTop: 4,
-          paddingBottom: 5,
-          marginLeft: { xs: 3, sm: 10 },
-          textAlign: { xs: "center", md: "left" }, 
+          pt: 4,
+          pb: 5,
+          ml: { xs: 3, sm: 7 },
+          textAlign: { xs: "center", md: "left" },
         }}
+        id="journey"
       >
         From Mexico's finest robotics, we bring a legacy of autonomy and innovation to the global stage.
       </Typography>
@@ -137,6 +131,7 @@ export default function Journey() {
     </Box>
   );
 }
+
 
 
 
