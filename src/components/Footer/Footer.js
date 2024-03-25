@@ -66,7 +66,7 @@ const Footer = () => {
                 "Home",
                 "Vision",
                 "Contacto",
-                "Team",
+                "Services",
                 "Journey",
                 "Privacy & Terms",
               ].map((text) => (
