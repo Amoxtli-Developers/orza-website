@@ -83,7 +83,7 @@ export const TeamCarousel = () => {
       spacing={2}
       alignItems="center"
       sx={{ padding: { xs: 2, sm: 5, md: 5 }, overflow: "hidden" }}
-    >
+      id="service">
       <Slider {...settings}>
         {teamMembers.map((member, index) => (
           <div className="slide-container" key={index}>

@@ -7,25 +7,15 @@ import {
 
 const slides = [
   {
-    label: "First slide label",
-    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
     imgPath: "/A3.JPG",
   },
   {
-    label: "Second slide label",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     imgPath: "/A5.JPG",
   },
   {
-    label: "Third slide label",
-    description:
-      "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
     imgPath: "/A4.jpg",
   },
   {
-    label: "Fourth slide label",
-    description:
-      "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
     imgPath: "/A6.JPG",
   },
 ];
@@ -90,8 +80,8 @@ export default function Journey() {
     >
       <Box sx={{ textAlign: { xs: "center", md: "right" } }}>
         <Typography
-          variant="h5"
-          component="h5"
+          variant="h4"
+          component="h4"
           gutterBottom
           sx={{
             fontWeight: "bold",
@@ -110,12 +100,19 @@ export default function Journey() {
           Journey
         </Typography>
       </Box>
+
       <Typography
         variant="body1"
         sx={{
           fontSize: { xs: "1rem", sm: "1.25rem", md: "1.5rem", lg: "1.75rem" },
+
+          pt: 4,
+          pb: 5,
+          ml: { xs: 3, sm: 7 },
+
           textAlign: { xs: "center", md: "right" },
         }}
+        id="journey"
       >
         From Mexico's finest robotics, we bring a legacy of autonomy and
         innovation to the global stage.

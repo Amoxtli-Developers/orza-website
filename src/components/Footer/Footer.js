@@ -1,13 +1,24 @@
 // Footer.js
-import React from "react";
-import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
-import Link from "@mui/material/Link";
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
-import logoSrc from "../../assets/images/logo/orza-logo-white.png"; // Make sure the path is correct
+import React from 'react';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import logoSrc from '../../assets/images/logo/orza-logo-white.png'; // Asegúrate de que la ruta es correcta
 
 const Footer = () => {
+  // Función para manejar el desplazamiento a la sección
+  const scrollToSection = (sectionId) => {
+    setTimeout(() => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        const yOffset = -100; // Ajusta este valor según sea necesario, por ejemplo, basado en la altura de tu cabecera.
+        const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
   return (
     <Box
       component="footer"
@@ -38,7 +49,7 @@ const Footer = () => {
             <Box
               component="img"
               src={logoSrc}
-              alt="OZ___RA Logo"
+              alt="ORZA Logo"
               sx={{
                 width: { xs: 150, sm: "auto" },
                 height: { xs: "auto", sm: 100 },
@@ -64,42 +75,47 @@ const Footer = () => {
             >
               {[
                 "Home",
+                "Service",
                 "Vision",
-                "Contacto",
-                "Services",
                 "Journey",
-                "Privacy & Terms",
+                // "Privacy & Terms" es probable que sea un enlace a un documento o página diferente
               ].map((text) => (
-                <Link
+                <Typography
                   key={text}
-                  href={`#${text.toLowerCase()}`}
-                  color="inherit"
+                  onClick={() => scrollToSection(text.toLowerCase())}
                   sx={{
+                    cursor: 'pointer',
                     p: 2,
                     textDecoration: "none",
                     fontWeight: "bold",
                     fontSize: "1rem",
+                    color: 'inherit', // Asegura que el color del texto sea el mismo que antes
                     "&:hover": {
                       textDecoration: "underline",
                     },
                   }}
                 >
                   {text}
-                </Link>
+                </Typography>
               ))}
             </Box>
           </Grid>
         </Grid>
         <Typography variant="body2" align="center" sx={{ pt: 8, pb: 2 }}>
           ORZA Copyright © {new Date().getFullYear()} by{" "}
-          <Link
-            href="https://amoxtli.tech/"
-            target="_blank"
+          <Typography
             color="inherit"
-            sx={{ textDecoration: "none" }}
+            sx={{
+              cursor: 'pointer',
+              textDecoration: "none",
+              "&:hover": {
+                textDecoration: "underline",
+              },
+            }}
+            onClick={() => scrollToSection("privacy-terms")}
           >
-            Amoxtli Web Developers
-          </Link>
+            Privacy & Terms
+          </Typography>
         </Typography>
       </Container>
     </Box>
@@ -107,3 +123,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
