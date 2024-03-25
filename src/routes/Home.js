@@ -38,7 +38,7 @@ function Home() {
   });
   const { ref: refJourney, inView: inViewJourney } = useInView({
     triggerOnce: true,
-    threshold: 1, // Adjust this threshold as needed
+    threshold: 0.5, // Adjust this threshold as needed
   });
 
   const [isLoading, setIsLoading] = useState(true);
@@ -157,7 +157,7 @@ function Home() {
         </Fade>
       </div>
       <div ref={refJourney} style={{ transition: "all 1s ease-in-out" }}>
-        <Fade in={inViewJourney} timeout={2000}>
+        <Fade in={inViewJourney} timeout={1000}>
           <div>
             <Journey />
           </div>

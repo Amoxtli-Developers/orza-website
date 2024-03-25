@@ -15,7 +15,7 @@ const Vision = () => {
     return () => clearInterval(interval);
   }, [images.length]);
 
-  return (    
+  return (
     <Grid
       container
       spacing={4}
@@ -37,27 +37,27 @@ const Vision = () => {
         }}
       >
         <Box sx={{ textAlign: { xs: "center", md: "left" } }}>
-        <Typography
-          variant="h4"
-          component="h4"
-          gutterBottom
-          sx={{
-            fontWeight: "bold",
-            fontSize: {
-              xs: "2.5rem",
-              sm: "3.5rem",
-              md: "4.5rem",
-              lg: "100px",
-            },
+          <Typography
+            variant="h4"
+            component="h4"
+            gutterBottom
+            sx={{
+              fontWeight: "bold",
+              fontSize: {
+                xs: "2.5rem",
+                sm: "3.5rem",
+                md: "4.5rem",
+                lg: "100px",
+              },
 
-            borderBottom: `10px solid ${underlineColor}`,
-            pb: { xs: 1, sm: 2 },
-            display: "inline-block",
-          }}
-        >
-          Vision
-        </Typography>
-      </Box>
+              borderBottom: `10px solid ${underlineColor}`,
+              pb: { xs: 1, sm: 2 },
+              display: "inline-block",
+            }}
+          >
+            Vision
+          </Typography>
+        </Box>
         <Typography
           variant="body1"
           sx={{

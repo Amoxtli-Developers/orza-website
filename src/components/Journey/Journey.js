@@ -6,19 +6,17 @@ import {
 } from "@mui/icons-material";
 
 const slides = [
-
-  { 
-    imgPath: '/A3.JPG',
+  {
+    imgPath: "/A3.JPG",
   },
   {
-    imgPath: '/A5.JPG',
+    imgPath: "/A5.JPG",
   },
   {
-    imgPath: '/A4.jpg',
+    imgPath: "/A4.jpg",
   },
   {
-    imgPath: '/A6.JPG',
-  
+    imgPath: "/A6.JPG",
   },
 ];
 
@@ -74,32 +72,34 @@ export default function Journey() {
   };
 
   return (
+    <Box
+      sx={{
+        overflow: "hidden",
+        padding: { xs: 2, sm: 5, md: 5 },
+      }}
+    >
+      <Box sx={{ textAlign: { xs: "center", md: "right" } }}>
+        <Typography
+          variant="h4"
+          component="h4"
+          gutterBottom
+          sx={{
+            fontWeight: "bold",
+            fontSize: {
+              xs: "2.5rem",
+              sm: "3.5rem",
+              md: "4.5rem",
+              lg: "100px",
+            },
 
-    <Box sx={{ width: '100%', overflow: 'hidden' }}>
-      <Typography
-        variant="h1"
-        component="h1"
-        gutterBottom
-        sx={{
-          fontWeight: "bold",
-          fontSize: { xs: "2.5rem", sm: "4rem", md: "6rem", lg: "100px" },
-          textAlign: { xs: "center", md: "left" },
-          ml: { xs: 3, sm: 7 },
-          position: 'relative', 
-          '&:after': { 
-            content: '""',
-            position: 'absolute',
-            bottom: -10, 
-            left: { xs: '50%', md: '0' },
-            transform: { xs: 'translateX(-50%)', md: 'none' },
-            width: '22%', 
             borderBottom: `10px solid ${underlineColor}`,
-            transition: 'width .3s',
-          }
-        }}
-      >
-        Journey
-      </Typography>
+            pb: { xs: 1, sm: 2 },
+            display: "inline-block",
+          }}
+        >
+          Journey
+        </Typography>
+      </Box>
 
       <Typography
         variant="body1"
@@ -109,9 +109,8 @@ export default function Journey() {
           pt: 4,
           pb: 5,
           ml: { xs: 3, sm: 7 },
-         
-          textAlign: { xs: "center", md: "right" },
 
+          textAlign: { xs: "center", md: "right" },
         }}
         id="journey"
       >
@@ -171,9 +170,3 @@ export default function Journey() {
     </Box>
   );
 }
-
-
-
-
-
-
