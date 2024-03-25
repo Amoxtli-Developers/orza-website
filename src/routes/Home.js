@@ -34,11 +34,11 @@ function Home() {
   });
   const { ref: refVision, inView: inViewVision } = useInView({
     triggerOnce: true,
-    threshold: 0.1, // Adjust this threshold as needed
+    threshold: 1, // Adjust this threshold as needed
   });
   const { ref: refJourney, inView: inViewJourney } = useInView({
     triggerOnce: true,
-    threshold: 0.1, // Adjust this threshold as needed
+    threshold: 1, // Adjust this threshold as needed
   });
 
   const [isLoading, setIsLoading] = useState(true);
@@ -150,14 +150,14 @@ function Home() {
         </Slide>
       </div>
       <div ref={refVision} style={{ transition: "all 1s ease-in-out" }}>
-        <Fade in={inViewVision} timeout={3000}>
+        <Fade in={inViewVision} timeout={2000}>
           <div>
             <Vision />
           </div>
         </Fade>
       </div>
       <div ref={refJourney} style={{ transition: "all 1s ease-in-out" }}>
-        <Fade in={inViewJourney} timeout={3000}>
+        <Fade in={inViewJourney} timeout={2000}>
           <div>
             <Journey />
           </div>
