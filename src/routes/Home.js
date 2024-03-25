@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Menu from "../components/Menu/Menu";
 import Header from "../components/Header/Header";
 import Header2 from "../components/Header2/Header2";
-import { Box, Slide, Fade } from "@mui/material";
+import { Box, Slide, Fade, CircularProgress } from "@mui/material";
 import A11 from "../assets/images/A11.webp";
 import { TeamCarousel } from "../components/TeamCarousel/TeamCarousel";
 import Title from "../components/Title/Title";
@@ -30,6 +30,31 @@ function Home() {
     triggerOnce: true,
     threshold: 1,
   });
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000); // simulate a loading time of 3 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return (
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+        }}
+      >
+        <CircularProgress sx={{color: "#1c44f1"}}/>
+      </Box>
+    );
+  }
 
   return (
     <>
