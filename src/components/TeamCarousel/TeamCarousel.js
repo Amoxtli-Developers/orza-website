@@ -7,6 +7,11 @@ import "./TeamCarousel.css";
 import { styled } from "@mui/system";
 import { Grid } from "@mui/material";
 
+import A7 from "../../assets/images/A7.jpeg";
+import A8 from "../../assets/images/A8.jpeg";
+import A9 from "../../assets/images/A9.jpg";
+import A10 from "../../assets/images/A10.jpg";
+
 export const TeamCarousel = () => {
   const StyledBox = styled("div")({
     display: "flex",
@@ -15,37 +20,26 @@ export const TeamCarousel = () => {
   });
   const teamMembers = [
     {
-      image: "https://media.istockphoto.com/id/931643150/vector/picture-icon.jpg?s=612x612&w=0&k=20&c=St-gpRn58eIa8EDAHpn_yO4CZZAnGD6wKpln9l3Z3Ok=",
-      title: "Member 1",
-      description: "This is a description for member 1.",
+      image: A7,
+      title: "Human Machine interaction security systems",
     },
     {
-      image: "https://media.istockphoto.com/id/931643150/vector/picture-icon.jpg?s=612x612&w=0&k=20&c=St-gpRn58eIa8EDAHpn_yO4CZZAnGD6wKpln9l3Z3Ok=",
-      title: "Member 2",
-      description: "This is a description for member 2.",
+      image: A8,
+      title:
+        "Integral Service: HMI Designs, algorithms maintenance and actualization, modernization of specific electronic and electrical components.  ",
     },
     {
-      image: "https://media.istockphoto.com/id/931643150/vector/picture-icon.jpg?s=612x612&w=0&k=20&c=St-gpRn58eIa8EDAHpn_yO4CZZAnGD6wKpln9l3Z3Ok=",
-      title: "Member 2",
-      description: "This is a description for member 2.",
+      image: A9,
+      title:
+        "Visual Control systems:for mechanical errors-automatic correction",
     },
     {
-      image: "https://media.istockphoto.com/id/931643150/vector/picture-icon.jpg?s=612x612&w=0&k=20&c=St-gpRn58eIa8EDAHpn_yO4CZZAnGD6wKpln9l3Z3Ok=",
-      title: "Member 2",
-      description: "This is a description for member 2.",
-    },
-    {
-      image: "https://media.istockphoto.com/id/931643150/vector/picture-icon.jpg?s=612x612&w=0&k=20&c=St-gpRn58eIa8EDAHpn_yO4CZZAnGD6wKpln9l3Z3Ok=",
-      title: "Member 2",
-      description: "This is a description for member 2.",
-    },
-    {
-      image: "https://media.istockphoto.com/id/931643150/vector/picture-icon.jpg?s=612x612&w=0&k=20&c=St-gpRn58eIa8EDAHpn_yO4CZZAnGD6wKpln9l3Z3Ok=",
-      title: "Member 2",
-      description: "This is a description for member 2.",
+      image: A10,
+      title:
+        "Local Positioning System :for industrial environments with high levels of electromagnetic noise and interference.",
     },
   ];
-  
+
   // Añadir estado para identificar el índice del slide central
   const [centerSlide, setCenterSlide] = React.useState(0);
 
@@ -88,7 +82,7 @@ export const TeamCarousel = () => {
       container
       spacing={2}
       alignItems="center"
-      sx={{ padding: { xs: 2, sm: 5, md: 10 } }}
+      sx={{ padding: { xs: 2, sm: 5, md: 5 }, overflow: "hidden" }}
     >
       <Slider {...settings}>
         {teamMembers.map((member, index) => (
@@ -96,8 +90,8 @@ export const TeamCarousel = () => {
             {/* Aplicar estilos condicionalmente para la tarjeta central */}
             <StyledBox
               style={{
-                transform: centerSlide === index ? 'scale(1.1)' : 'scale(1)',
-                transition: 'transform 0.3s',
+                transform: centerSlide === index ? "scale(1.1)" : "scale(1)",
+                transition: "transform 0.3s",
               }}
             >
               <TeamCard

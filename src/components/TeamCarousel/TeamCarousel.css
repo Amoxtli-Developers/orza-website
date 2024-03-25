@@ -34,7 +34,7 @@
 }
 
 .slick-list {
-  padding: 70px 10px !important; /* Ajusta esto para evitar que se corte por los bordes */
+  padding: 35px 10px !important; /* Ajusta esto para evitar que se corte por los bordes */
   margin: 0 auto; /* Centra el carrusel en su contenedor */
 }
 

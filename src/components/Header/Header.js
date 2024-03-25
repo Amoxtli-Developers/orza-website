@@ -10,7 +10,7 @@ const Header = () => {
       container
       spacing={2}
       alignItems="center"
-      sx={{ padding: { xs: 2, sm: 5, md: 10 } }}
+      sx={{ padding: { xs: 2, sm: 5, md: 5 }, paddingTop: 0, }}
     >
       <Grid item xs={12} md={6}>
         <Typography
