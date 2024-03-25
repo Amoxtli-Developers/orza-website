@@ -8,6 +8,8 @@ import { TeamCarousel } from "../components/TeamCarousel/TeamCarousel";
 import Title from "../components/Title/Title";
 import Footer from "../components/Footer/Footer";
 import { useInView } from "react-intersection-observer";
+import Vision from "../components/Vision/Vision";
+import Journey from "../components/Journey/Journey";
 
 function Home() {
   const { ref: refHeader, inView: inViewHeader } = useInView({
@@ -30,6 +32,14 @@ function Home() {
     triggerOnce: true,
     threshold: 1,
   });
+  const { ref: refVision, inView: inViewVision } = useInView({
+    triggerOnce: true,
+    threshold: 0.1, // Adjust this threshold as needed
+  });
+  const { ref: refJourney, inView: inViewJourney } = useInView({
+    triggerOnce: true,
+    threshold: 0.1, // Adjust this threshold as needed
+  });
 
   const [isLoading, setIsLoading] = useState(true);
 
@@ -51,7 +61,7 @@ function Home() {
           height: "100vh",
         }}
       >
-        <CircularProgress sx={{color: "#1c44f1"}}/>
+        <CircularProgress sx={{ color: "#1c44f1" }} />
       </Box>
     );
   }
@@ -138,6 +148,20 @@ function Home() {
             <TeamCarousel />
           </div>
         </Slide>
+      </div>
+      <div ref={refVision} style={{ transition: "all 1s ease-in-out" }}>
+        <Fade in={inViewVision} timeout={3000}>
+          <div>
+            <Vision />
+          </div>
+        </Fade>
+      </div>
+      <div ref={refJourney} style={{ transition: "all 1s ease-in-out" }}>
+        <Fade in={inViewJourney} timeout={3000}>
+          <div>
+            <Journey />
+          </div>
+        </Fade>
       </div>
       <Footer />
     </>
