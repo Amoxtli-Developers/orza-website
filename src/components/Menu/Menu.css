@@ -5,12 +5,20 @@
   justify-content: space-between;
   overflow: hidden;
 }
-
 .menu-container.open {
   background-color: #02010a;
   animation: expandMenuFromButton 0.5s forwards;
-  height: 100vh;
+  height: 100vh; 
+  width: 100vw; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; 
+  margin: 0;
+  padding: 0;
+  z-index: 1000; 
 }
+
 
 .menu-header {
   display: flex;
@@ -87,10 +95,20 @@
   background-color: #02010a;
   padding: 1rem;
   cursor: pointer;
-  font-size: 80px;
+  font-size: 80px; 
   font-weight: 700;
   color: #ede8e6;
   position: relative;
+  transition: transform 0.3s ease, text-shadow 0.3s ease; 
+}
+
+.menu-item:hover {
+  transform: scale(1.07); 
+  text-shadow: 
+    -2px -2px 0 #1c44f1,  
+     2px -2px 0 #1c44f1,
+    -2px  2px 0 #1c44f1,
+     2px  2px 0 #1c44f1; 
 }
 
 .menu-item {
@@ -181,7 +199,10 @@
 
   
   .menu-list::before, .menu-list::after {
-    content: none; /* se eliminan las lineas azules */
+    content: none;
   }
 }
 
+.no-scroll {
+  overflow: hidden;
+}

@@ -14,6 +14,7 @@ const Header = () => {
     >
       <Grid item xs={12} md={6}>
         <Typography
+          id="home"
           variant="h1"
           component="h1"
           gutterBottom
@@ -21,6 +22,7 @@ const Header = () => {
             fontWeight: "bold",
             fontSize: { xs: "2.5rem", sm: "4rem", md: "6rem", lg: "100px" }, // Adjusted for various breakpoints
             textAlign: { xs: "center", md: "left" }, // Center text on small screens
+            
           }}
         >
           Revolutionizing <br />

@@ -15,7 +15,7 @@ const Vision = () => {
     return () => clearInterval(interval);
   }, [images.length]);
 
-  return (
+  return (    
     <Grid
       container
       spacing={4}

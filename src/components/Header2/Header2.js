@@ -10,7 +10,7 @@ const Header2 = () => {
     >
       <Grid container spacing={2}>
         <Grid item xs={12} textAlign="center">
-          <Typography
+        <Typography
             variant="h2"
             component="h2"
             gutterBottom
