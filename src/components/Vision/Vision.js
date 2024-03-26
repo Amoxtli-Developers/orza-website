@@ -54,7 +54,7 @@ const Vision = () => {
               pb: { xs: 1, sm: 2 },
               display: "inline-block",
             }}
-          >
+            id="vision" >
             Vision
           </Typography>
         </Box>
