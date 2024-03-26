@@ -5,7 +5,7 @@ const Vision = () => {
   const underlineColor = "#1c44f1";
 
   const [imageIndex, setImageIndex] = useState(0);
-  const images = ["/A1.jpg", "/A4.jpg"];
+  const images = ["/A1.jpg", "/A2.jpg"];
 
   useEffect(() => {
     const interval = setInterval(() => {
