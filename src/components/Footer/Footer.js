@@ -1,10 +1,10 @@
 // Footer.js
-import React from 'react';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
-import logoSrc from '../../assets/images/logo/orza-logo-white.png'; // Asegúrate de que la ruta es correcta
+import React from "react";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import Grid from "@mui/material/Grid";
+import logoSrc from "../../assets/images/logo/orza-logo-white.png"; // Asegúrate de que la ruta es correcta
 
 const Footer = () => {
   // Función para manejar el desplazamiento a la sección
@@ -13,8 +13,9 @@ const Footer = () => {
       const section = document.getElementById(sectionId);
       if (section) {
         const yOffset = -100; // Ajusta este valor según sea necesario, por ejemplo, basado en la altura de tu cabecera.
-        const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-        window.scrollTo({ top: y, behavior: 'smooth' });
+        const y =
+          section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
       }
     }, 100);
   };
@@ -73,23 +74,17 @@ const Footer = () => {
                 mt: { xs: 2, sm: 0 },
               }}
             >
-              {[
-                "Home",
-                "Service",
-                "Vision",
-                "Journey",
-                // "Privacy & Terms" es probable que sea un enlace a un documento o página diferente
-              ].map((text) => (
+              {["Home", "Service", "Vision", "Journey"].map((text) => (
                 <Typography
                   key={text}
                   onClick={() => scrollToSection(text.toLowerCase())}
                   sx={{
-                    cursor: 'pointer',
+                    cursor: "pointer",
                     p: 2,
                     textDecoration: "none",
                     fontWeight: "bold",
                     fontSize: "1rem",
-                    color: 'inherit', // Asegura que el color del texto sea el mismo que antes
+                    color: "inherit", // Asegura que el color del texto sea el mismo que antes
                     "&:hover": {
                       textDecoration: "underline",
                     },
@@ -98,6 +93,27 @@ const Footer = () => {
                   {text}
                 </Typography>
               ))}
+              <a
+                href="mailto:ventas@orzatech.com"
+                style={{ textDecoration: "none", color: "inherit"}}
+              >
+                <Typography
+                  sx={{
+                    cursor: "pointer",
+                    p: 2,
+                    textDecoration: "none",
+                    fontWeight: "bold",
+                    fontSize: "1rem",
+                    color: "inherit", // Ensures that the text color remains the same as before
+                    "&:hover": {
+                      textDecoration: "underline",
+                    },
+                    display: "inline-block", // This ensures the typography behaves correctly as an inline element
+                  }}
+                >
+                  Contact Sales
+                </Typography>
+              </a>
             </Box>
           </Grid>
         </Grid>
@@ -106,7 +122,7 @@ const Footer = () => {
           <Typography
             color="inherit"
             sx={{
-              cursor: 'pointer',
+              cursor: "pointer",
               textDecoration: "none",
               "&:hover": {
                 textDecoration: "underline",
@@ -123,4 +139,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
