@@ -1,24 +1,100 @@
+@keyframes expandFromButton {
+  from {
+    clip-path: circle(0 at var(--btn-center-x) var(--btn-center-y));
+  }
+  to {
+    clip-path: circle(150% at var(--btn-center-x) var(--btn-center-y));
+  }
+}
+
+@keyframes collapseToButton {
+  from {
+    clip-path: circle(150% at var(--btn-center-x) var(--btn-center-y));
+  }
+  to {
+    clip-path: circle(0 at var(--btn-center-x) var(--btn-center-y));
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 4;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 4;
+  }
+}
+span .text-animation {
+  font-size: 16px;
+}
+
+.text-animation {
+  display: inline-block;
+  opacity: 4;
+  animation: fadeIn 0.8s forwards;
+}
+
+.text-hidden {
+  animation: fadeOut 0.5s forwards;
+}
+
+/* Añadir animaciones para el clip-path */
+@keyframes clipPathOpen {
+  from {
+    clip-path: circle(0% at 50% 50%);
+  }
+  to {
+    clip-path: circle(150% at 50% 50%);
+  }
+}
+
+@keyframes clipPathClose {
+  from {
+    clip-path: circle(150% at 50% 50%);
+  }
+  to {
+    clip-path: circle(0% at 50% 50%);
+  }
+}
+
 .menu-container {
+  --btn-center-x: 0px;
+  --btn-center-y: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
 }
+
 .menu-container.open {
+  display: flex;
+  animation: expandFromButton 0.5s forwards;
   background-color: #02010a;
-  animation: expandMenuFromButton 0.5s forwards;
-  height: 100vh; 
-  width: 100vw; 
+  height: 100vh;
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
-  right: 0; 
+  right: 0;
   margin: 0;
   padding: 0;
-  z-index: 1000; 
+  z-index: 1000;
+  overflow: hidden;
 }
 
+.menu-container.closing {
+  animation: collapseToButton 0.5s forwards;
+}
 
 .menu-header {
   display: flex;
@@ -42,8 +118,8 @@
 }
 
 .menu-button-container span {
-  margin-right: 10px;
-  font-size: 1.5rem;
+  margin-right: 2px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -61,10 +137,9 @@
   height: 40px;
 }
 
-.menu-button:hover,
-.menu-button:focus {
-  transform: scale(0.5);
-  transition: ease 0.3s;
+.menu-button:hover {
+  transform: scale(1)!important;
+  transition: ease 0.3s!important;
 }
 
 .menu-content,
@@ -95,20 +170,17 @@
   background-color: #02010a;
   padding: 1rem;
   cursor: pointer;
-  font-size: 80px; 
+  font-size: 80px;
   font-weight: 700;
   color: #ede8e6;
   position: relative;
-  transition: transform 0.3s ease, text-shadow 0.3s ease; 
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
 .menu-item:hover {
-  transform: scale(1.07); 
-  text-shadow: 
-    -2px -2px 0 #1c44f1,  
-     2px -2px 0 #1c44f1,
-    -2px  2px 0 #1c44f1,
-     2px  2px 0 #1c44f1; 
+  transform: scale(1.07);
+  text-shadow: -2px -2px 0 #1c44f1, 2px -2px 0 #1c44f1, -2px 2px 0 #1c44f1,
+    2px 2px 0 #1c44f1;
 }
 
 .menu-item {
@@ -152,10 +224,6 @@
   margin-bottom: 60px;
 }
 
-.menu-header.open {
-  background-color: #02010a;
-}
-
 .menu-header.open h1,
 .menu-header.open .menu-button {
   color: #ede8e6;
@@ -168,37 +236,33 @@
   color: #ede8e6;
 }
 
-
-
-
-
 /* Menu RESPONSIVE */
 @media (max-width: 768px) {
   .menu-header h1 {
-    margin-left: 1rem; 
+    margin-left: 1rem;
   }
 
   .menu-button-container span {
-    font-size: 1rem; 
+    font-size: 16px;
   }
 
   .menu-item {
     font-size: 40px;
-    padding: 0.5rem; 
+    padding: 0.5rem;
   }
 
   .menu-footer {
-    margin-left: 0; 
-    padding: 1rem; 
+    margin-left: 0;
+    padding: 1rem;
     text-align: center;
   }
 
   .menu-list {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 
-  
-  .menu-list::before, .menu-list::after {
+  .menu-list::before,
+  .menu-list::after {
     content: none;
   }
 }
