@@ -95,7 +95,7 @@ const Footer = () => {
               ))}
               <a
                 href="mailto:ventas@orzatech.com"
-                style={{ textDecoration: "none", color: "inherit"}}
+                style={{ textDecoration: "none", color: "inherit" }}
               >
                 <Typography
                   sx={{
@@ -128,9 +128,15 @@ const Footer = () => {
                 textDecoration: "underline",
               },
             }}
-            onClick={() => scrollToSection("privacy-terms")}
           >
-            Privacy & Terms
+            <a
+              href="https://amoxtli.tech"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "inherit", textDecoration: "inherit", fontSize: "14px" }} // Inherit styles from Typography
+            >
+              Amoxtli Web Developers
+            </a>
           </Typography>
         </Typography>
       </Container>
