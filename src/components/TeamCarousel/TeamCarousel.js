@@ -9,8 +9,8 @@ import { Grid } from "@mui/material";
 
 import A7 from "../../assets/images/A7.jpeg";
 import A8 from "../../assets/images/A8.jpeg";
-import A9 from "../../assets/images/A9.jpg";
-import A10 from "../../assets/images/A10.jpg";
+import A9 from "../../assets/images/A9.jpeg";
+import A10 from "../../assets/images/A10.png";
 
 export const TeamCarousel = () => {
   const StyledBox = styled("div")({
