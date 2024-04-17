@@ -8,8 +8,10 @@ import { TeamCarousel } from "../components/TeamCarousel/TeamCarousel";
 import Title from "../components/Title/Title";
 import Footer from "../components/Footer/Footer";
 import { useInView } from "react-intersection-observer";
-import Vision from "../components/Vision/Vision";
-import Journey from "../components/Journey/Journey";
+import { Technologies } from "../components/Technologies/Technolgies";
+import SolutionSlider from "../components/SolutionSlider/SolutionSlider";
+import ClientCard from "../components/ClientCard/ClientCard";
+import { CtaTex } from "../components/Cta/CtaTex.js";
 
 function Home() {
   const { ref: refHeader, inView: inViewHeader } = useInView({
@@ -33,10 +35,6 @@ function Home() {
     threshold: 1,
   });
   const { ref: refVision, inView: inViewVision } = useInView({
-    triggerOnce: true,
-    threshold: 0.5, // Adjust this threshold as needed
-  });
-  const { ref: refJourney, inView: inViewJourney } = useInView({
     triggerOnce: true,
     threshold: 0.5, // Adjust this threshold as needed
   });
@@ -69,6 +67,7 @@ function Home() {
   return (
     <>
       <Menu />
+
       <div ref={refHeader} style={{ transition: "all 1s ease-in-out" }}>
         <Slide
           direction="down"
@@ -123,6 +122,10 @@ function Home() {
           </div>
         </Slide>
       </div>
+      <ClientCard />
+      <Title name={"Our Solutions"} />
+      <SolutionSlider />
+
       <div ref={refTitle} style={{ transition: "all 1s ease-in-out" }}>
         <Slide
           direction="right"
@@ -132,10 +135,11 @@ function Home() {
           unmountOnExit
         >
           <div>
-            <Title />
+            <Title name={"Our Services"} />
           </div>
         </Slide>
       </div>
+
       <div ref={refTeamCarousel} style={{ transition: "all 1s ease-in-out" }}>
         <Slide
           direction="left"
@@ -149,20 +153,16 @@ function Home() {
           </div>
         </Slide>
       </div>
+      <Title name={"Our Technologies"} />
       <div ref={refVision} style={{ transition: "all 1s ease-in-out" }}>
         <Fade in={inViewVision} timeout={1000}>
           <div>
-            <Vision />
+            <Technologies />
           </div>
         </Fade>
       </div>
-      <div ref={refJourney} style={{ transition: "all 1s ease-in-out" }}>
-        <Fade in={inViewJourney} timeout={1000}>
-          <div>
-            <Journey />
-          </div>
-        </Fade>
-      </div>
+      <CtaTex />
+
       <Footer />
     </>
   );

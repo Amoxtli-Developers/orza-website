@@ -1,27 +1,5 @@
-/* Estilos para las tarjetas */
-.TeamCard {
-  transition: transform 0.3s ease;
-}
 
-/* Efecto de hover para todas las tarjetas */
-.TeamCard:hover {
-  transform: scale(1.05); /* Aumentar el tamaño de la tarjeta al hacer hover */
-}
 
-/* Estilos específicos para la tarjeta central */
-.slide-container:nth-child(2) .TeamCard:hover {
-  transform: none; /* Eliminar el efecto de hover para la tarjeta central */
-}
-
-.slick-slide {
-  transition: all 0.3s ease; /* Suaviza la transición */
-}
-
-.slick-center {
-  transform: scale(
-    1.3
-  ); /* Ajusta esto para evitar que se corte por los bordes */
-}
 
 .slick-slider {
   width: 100%;

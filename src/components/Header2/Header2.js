@@ -20,7 +20,7 @@ const Header2 = () => {
                 xs: "2.5rem",
                 sm: "3.5rem",
                 md: "4.5rem",
-                lg: "100px",
+                lg: "80px",
               }, // Adjusted for various breakpoints
             }}
           >

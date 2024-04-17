@@ -1,36 +1,115 @@
-// Footer.js
 import React from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
-import logoSrc from "../../assets/images/logo/orza-logo-white.png"; // Asegúrate de que la ruta es correcta
+import IconButton from "@mui/material/IconButton";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import logoSrc from "../../assets/images/logo/orza-logo-white.png"; // Make sure the path is correct
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
-  // Función para manejar el desplazamiento a la sección
-  const scrollToSection = (sectionId) => {
-    setTimeout(() => {
-      const section = document.getElementById(sectionId);
-      if (section) {
-        const yOffset = -100; // Ajusta este valor según sea necesario, por ejemplo, basado en la altura de tu cabecera.
-        const y =
-          section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-        window.scrollTo({ top: y, behavior: "smooth" });
-      }
-    }, 100);
-  };
+  const navigate = useNavigate(); // Using useNavigate hook to get the navigate function
 
   return (
     <Box
       component="footer"
       sx={{
-        py: { xs: 3, sm: 5 },
-        px: 3,
+        px: { xs: 1, sm: 3 }, // Adjust padding for different screen sizes
+        py: 5,
         backgroundColor: "#1c44f1",
         color: "white",
+        minHeight: "100vh", // Set minimum height to 100% of viewport height
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
       }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
+        <Grid container alignItems="center" justifyContent="space-between">
+          <Grid item xs={12} sm={6}>
+            <Typography
+              variant="h6"
+              sx={{
+                fontWeight: "bold",
+                fontSize: { xs: "1rem", sm: "2rem" }, // Adjust font size for different screen sizes
+                textAlign: { xs: "center", sm: "left", lg: "left" },
+              }}
+            >
+              Discover next
+            </Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontWeight: "bold",
+                fontSize: { xs: "3rem", sm: "5rem", lg: "200px" }, // Adjust font size for different screen sizes
+                cursor: "pointer",
+                textAlign: { xs: "center", sm: "left", lg: "left" },
+                paddingBottom: { xs: 2, sm: 0 },
+                textDecoration: "underline",
+                "&:hover": { cursor: "pointer" },
+              }}
+              onClick={() => navigate("/vision")}
+            >
+              Vision
+            </Typography>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: { xs: "center", sm: "flex-end" },
+            }}
+          >
+            <IconButton
+              href="https://www.linkedin.com/company/orzatech"
+              target="_blank"
+              rel="noreferrer"
+              color="inherit"
+              aria-label="LinkedIn"
+            >
+              <LinkedInIcon />
+            </IconButton>
+            <IconButton
+              href="https://www.facebook.com/orzatech"
+              target="_blank"
+              rel="noreferrer"
+              color="inherit"
+              aria-label="Facebook"
+            >
+              <FacebookIcon />
+            </IconButton>
+            <IconButton
+              href="https://twitter.com/orzatech"
+              target="_blank"
+              rel="noreferrer"
+              color="inherit"
+              aria-label="Twitter"
+            >
+              <TwitterIcon />
+            </IconButton>
+            <IconButton
+              href="https://www.instagram.com/orzatech"
+              target="_blank"
+              rel="noreferrer"
+              color="inherit"
+              aria-label="Instagram"
+            >
+              <InstagramIcon />
+            </IconButton>
+          </Grid>
+        </Grid>
+      </Container>
+
+      <hr style={{ width: "100%", color: "white", opacity: 0.3 }} />
+
+      <Container maxWidth="xl" sx={{ pb: 10, pt: 10 }}>
         <Grid
           container
           spacing={2}
@@ -40,11 +119,10 @@ const Footer = () => {
           <Grid
             item
             xs={12}
-            sm={4}
-            md={3}
+            md={6}
             sx={{
               display: "flex",
-              justifyContent: { xs: "center", sm: "flex-start" },
+              justifyContent: { xs: "center", md: "flex-start" },
             }}
           >
             <Box
@@ -53,38 +131,38 @@ const Footer = () => {
               alt="ORZA Logo"
               sx={{
                 width: { xs: 150, sm: "auto" },
-                height: { xs: "auto", sm: 100 },
+                height: { xs: "auto", sm: 200 },
                 maxWidth: "100%",
               }}
             />
           </Grid>
+
           <Grid
             item
             xs={12}
-            sm={8}
-            md={9}
-            sx={{ textAlign: { xs: "center", sm: "end" } }}
+            md={6}
+            sx={{ textAlign: { xs: "center", md: "end" } }}
           >
             <Box
               sx={{
                 display: "flex",
                 flexDirection: { xs: "column", sm: "row" },
-                alignItems: { xs: "center", sm: "center" },
+                alignItems: "center",
                 justifyContent: "flex-end",
                 mt: { xs: 2, sm: 0 },
               }}
             >
-              {["Home", "Service", "Vision", "Journey"].map((text) => (
+              {["Home", "Service", "Vision", "Journey", "JoinUs"].map((text) => (
                 <Typography
                   key={text}
-                  onClick={() => scrollToSection(text.toLowerCase())}
+                  onClick={() => navigate(`/${text.toLowerCase()}`)}
                   sx={{
                     cursor: "pointer",
                     p: 2,
                     textDecoration: "none",
                     fontWeight: "bold",
                     fontSize: "1rem",
-                    color: "inherit", // Asegura que el color del texto sea el mismo que antes
+                    color: "inherit",
                     "&:hover": {
                       textDecoration: "underline",
                     },
@@ -93,37 +171,25 @@ const Footer = () => {
                   {text}
                 </Typography>
               ))}
-              <a
-                href="mailto:ventas@orzatech.com"
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
-                <Typography
-                  sx={{
-                    cursor: "pointer",
-                    p: 2,
-                    textDecoration: "none",
-                    fontWeight: "bold",
-                    fontSize: "1rem",
-                    color: "inherit", // Ensures that the text color remains the same as before
-                    "&:hover": {
-                      textDecoration: "underline",
-                    },
-                    display: "inline-block", // This ensures the typography behaves correctly as an inline element
-                  }}
-                >
-                  Contact Sales
-                </Typography>
-              </a>
+              
             </Box>
           </Grid>
         </Grid>
-        <Typography variant="body2" align="center" sx={{ pt: 8, pb: 2 }}>
+      </Container>
+      <hr style={{ width: "100%", color: "white", opacity: 0.3 }} />
+      <Container maxWidth="xl">
+        <Typography
+          variant="body2"
+          align="center"
+          sx={{ pt: 8, pb: 2, color: "white", opacity: 0.8 }}
+        >
           ORZA Copyright © {new Date().getFullYear()} by{" "}
           <Typography
             color="inherit"
             sx={{
               cursor: "pointer",
               textDecoration: "none",
+              opacity: 0.8,
               "&:hover": {
                 textDecoration: "underline",
               },
@@ -133,7 +199,12 @@ const Footer = () => {
               href="https://amoxtli.tech"
               target="_blank"
               rel="noreferrer"
-              style={{ color: "inherit", textDecoration: "inherit", fontSize: "14px" }} // Inherit styles from Typography
+              style={{
+                color: "inherit",
+                textDecoration: "inherit",
+                fontSize: "14px",
+                opacity: 0.8,
+              }}
             >
               Amoxtli Web Developers
             </a>

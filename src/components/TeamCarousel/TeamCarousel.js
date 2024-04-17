@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import TeamCard from "../TeamCard/TeamCard";
+import { ThreeDCardDemo } from "../ThreeDCardDemo/ThreeDCardDemo";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./TeamCarousel.css";
@@ -22,28 +22,29 @@ export const TeamCarousel = () => {
     {
       image: A7,
       title: "Human Machine interaction security systems",
+      description: "Description for Human Machine interaction security systems",
+      imageUrl: A7,
     },
     {
       image: A8,
-      title:
-        "Integral Service: HMI Designs, algorithms maintenance and actualization, modernization of specific electronic and electrical components.  ",
+      title: "Integral Service: HMI Designs",
+      description: "Description for Integral Service: HMI Designs",
+      imageUrl: A8,
     },
     {
       image: A9,
-      title:
-        "Visual Control systems:for mechanical errors-automatic correction",
+      title: "Visual Control systems",
+      description: "Description for Visual Control systems",
+      imageUrl: A9,
     },
     {
       image: A10,
-      title:
-        "Local Positioning System :for industrial environments with high levels of electromagnetic noise and interference.",
+      title: "Local Positioning System",
+      description: "Description for Local Positioning System",
+      imageUrl: A10,
     },
   ];
 
-  // Añadir estado para identificar el índice del slide central
-  const [centerSlide, setCenterSlide] = React.useState(0);
-
-  // Configuraciones para react-slick
   const settings = {
     dots: false,
     infinite: true,
@@ -51,7 +52,6 @@ export const TeamCarousel = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    focusOnSelect: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -70,11 +70,6 @@ export const TeamCarousel = () => {
         },
       },
     ],
-    beforeChange: (current, next) => {
-      // Si 'slidesToShow' es 3, entonces el slide del centro es 'next + 1'
-      const centerIndex = next + 1; // Ajusta esto según cómo 'react-slick' calcula tu índice actual
-      setCenterSlide(centerIndex);
-    },
   };
 
   return (
@@ -82,22 +77,17 @@ export const TeamCarousel = () => {
       container
       spacing={2}
       alignItems="center"
-      sx={{ padding: { xs: 2, sm: 5, md: 5 }, overflow: "hidden" }}
-      id="service">
+      sx={{ overflow: "hidden", paddingBottom: { xs: 2, sm: 5, md: 7 } }}
+      id="service"
+    >
       <Slider {...settings}>
         {teamMembers.map((member, index) => (
           <div className="slide-container" key={index}>
-            {/* Aplicar estilos condicionalmente para la tarjeta central */}
-            <StyledBox
-              style={{
-                transform: centerSlide === index ? "scale(1.1)" : "scale(1)",
-                transition: "transform 0.3s",
-              }}
-            >
-              <TeamCard
-                image={member.image}
+            <StyledBox>
+              <ThreeDCardDemo
                 title={member.title}
                 description={member.description}
+                imageUrl={member.imageUrl}
               />
             </StyledBox>
           </div>
