@@ -118,7 +118,12 @@ function Home() {
           timeout={3000}
         >
           <div>
-            <Header2 />
+            <Header2
+              title="Revolutionizing"
+              text1="We embark on this mission with a singular focus: to redefine the landscape of industrial automation. By blending the power of intelligent algorithms with state-of-the-art technologies in vision, mapping, localization, LiDAR, and object detection,"
+              text2="we're setting new benchmarks for productivity, efficiency, and safety. Our robots are more than machines—they are harbingers of an industrial renaissance."
+              underlineColor="#1c44f1"
+            />
           </div>
         </Slide>
       </div>
@@ -163,7 +168,8 @@ function Home() {
       </div>
       <CtaTex />
 
-      <Footer />
+      <Footer visionText="Vision" visionHref="/vision" />
+
     </>
   );
 }

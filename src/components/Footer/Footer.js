@@ -11,7 +11,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import logoSrc from "../../assets/images/logo/orza-logo-white.png"; // Make sure the path is correct
 import { useNavigate } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({ visionText, visionHref }) => {
   const navigate = useNavigate(); // Using useNavigate hook to get the navigate function
 
   return (
@@ -52,9 +52,9 @@ const Footer = () => {
                 textDecoration: "underline",
                 "&:hover": { cursor: "pointer" },
               }}
-              onClick={() => navigate("/vision")}
+              onClick={() => navigate(visionHref)}
             >
-              Vision
+              {visionText}
             </Typography>
           </Grid>
           <Grid
@@ -152,26 +152,27 @@ const Footer = () => {
                 mt: { xs: 2, sm: 0 },
               }}
             >
-              {["Home", "Service", "Vision", "Journey", "JoinUs"].map((text) => (
-                <Typography
-                  key={text}
-                  onClick={() => navigate(`/${text.toLowerCase()}`)}
-                  sx={{
-                    cursor: "pointer",
-                    p: 2,
-                    textDecoration: "none",
-                    fontWeight: "bold",
-                    fontSize: "1rem",
-                    color: "inherit",
-                    "&:hover": {
-                      textDecoration: "underline",
-                    },
-                  }}
-                >
-                  {text}
-                </Typography>
-              ))}
-              
+              {["Home", "Service", "Vision", "Journey", "JoinUs"].map(
+                (text) => (
+                  <Typography
+                    key={text}
+                    onClick={() => navigate(`/${text.toLowerCase()}`)}
+                    sx={{
+                      cursor: "pointer",
+                      p: 2,
+                      textDecoration: "none",
+                      fontWeight: "bold",
+                      fontSize: "1rem",
+                      color: "inherit",
+                      "&:hover": {
+                        textDecoration: "underline",
+                      },
+                    }}
+                  >
+                    {text}
+                  </Typography>
+                )
+              )}
             </Box>
           </Grid>
         </Grid>
