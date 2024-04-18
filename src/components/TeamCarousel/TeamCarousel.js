@@ -21,26 +21,37 @@ export const TeamCarousel = () => {
   const teamMembers = [
     {
       image: A7,
-      title: "Human Machine interaction security systems",
-      description: "Description for Human Machine interaction security systems",
+      title: "Detailed maps for industry",
+      description:
+        "Creation of detailed, real-time maps for dynamic environments, enabling precise localization and path planning for automated systems.",
       imageUrl: A7,
     },
     {
       image: A8,
-      title: "Integral Service: HMI Designs",
-      description: "Description for Integral Service: HMI Designs",
+      title: "Autonomous Industrial Vehicles ",
+      description:
+        "Creation of detailed, real-time maps for dynamic environments, enabling precise localization and path planning for automated systems.",
       imageUrl: A8,
     },
     {
       image: A9,
-      title: "Visual Control systems",
-      description: "Description for Visual Control systems",
+      title: "Autonomous Head Cranes",
+      description:
+        "Creation of detailed, real-time maps for dynamic environments, enabling precise localization and path planning for automated systems.",
       imageUrl: A9,
     },
     {
       image: A10,
-      title: "Local Positioning System",
-      description: "Description for Local Positioning System",
+      title: "Anti Sway for Outside environments",
+      description:
+        "Creation of detailed, real-time maps for dynamic environments, enabling precise localization and path planning for automated systems.",
+      imageUrl: A10,
+    },
+    {
+      image: A10,
+      title: "Personalized Control Systems Design",
+      description:
+        "Creation of detailed, real-time maps for dynamic environments, enabling precise localization and path planning for automated systems.",
       imageUrl: A10,
     },
   ];
@@ -77,7 +88,7 @@ export const TeamCarousel = () => {
       container
       spacing={2}
       alignItems="center"
-      sx={{ overflow: "hidden", paddingBottom: { xs: 2, sm: 5, md: 7 } }}
+      sx={{ overflow: "hidden" }}
       id="service"
     >
       <Slider {...settings}>

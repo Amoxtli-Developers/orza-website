@@ -2,7 +2,6 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 
 const Title = ({name}) => {
-  const underlineColor = "#1c44f1";
   return (
     <Box
       sx={{
@@ -23,10 +22,7 @@ const Title = ({name}) => {
             md: "5rem",
             lg: "6rem",
             xl: "60px",
-          }, // Responsive font sizes
-          borderBottom: `15px solid ${underlineColor}`,
-          display: "inline-block", // Ensure underline scales with text
-          paddingBottom: "4px", // Adjust based on your design needs
+          },
         }}
       >
         {name}

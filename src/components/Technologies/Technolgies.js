@@ -4,23 +4,21 @@ import StickyScroll from "../../components/StickyScroll/StickyScroll.js";
 
 const content = [
   {
-    title: "Collaborative Editing",
-    description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+    title: "SDV Vehículo autónomo",
+    description: "Description Tech 1",
     content: (
       <div className="h-full w-full flex items-center justify-center">
         <img
           src="https://via.placeholder.com/400x200?text=Collaborative+Editing"
-          alt="Collaborative Editing 1"
+          alt="SDV Vehículo autónomo 1"
           className="w-full h-auto"
         />
       </div>
     ),
   },
   {
-    title: "Real time changes",
-    description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+    title: "Hook - Vehículo autónomo",
+    description: "Description Tech 2",
     content: (
       <div className="h-full w-full flex items-center justify-center">
         <img
@@ -33,8 +31,7 @@ const content = [
   },
   {
     title: "Version control",
-    description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+    description: "Description Tech 3",
     content: (
       <div className="h-full w-full flex items-center justify-center">
         <img
@@ -46,9 +43,47 @@ const content = [
     ),
   },
   {
-    title: "Running out of content",
-    description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+    title: "F1:10 Hook - Vehículo autónomo ",
+    description: "Description Tech 4",
+    content: (
+      <div className="h-full w-full flex items-center justify-center">
+        <img
+          src="https://via.placeholder.com/400x200?text=Collaborative+Editing"
+          alt="Collaborative Editing 4"
+          className="w-full h-auto"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "UUV - Submarino",
+    description: "Description Tech 5",
+    content: (
+      <div className="h-full w-full flex items-center justify-center">
+        <img
+          src="https://via.placeholder.com/400x200?text=Collaborative+Editing"
+          alt="Collaborative Editing 4"
+          className="w-full h-auto"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "USV - Barco",
+    description: "Description Tech 6",
+    content: (
+      <div className="h-full w-full flex items-center justify-center">
+        <img
+          src="https://via.placeholder.com/400x200?text=Collaborative+Editing"
+          alt="Collaborative Editing 4"
+          className="w-full h-auto"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "UAV - Dron",
+    description: "Description Tech 7",
     content: (
       <div className="h-full w-full flex items-center justify-center">
         <img

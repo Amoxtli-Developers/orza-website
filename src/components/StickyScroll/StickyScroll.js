@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
 
 const StickyScroll = ({ content, contentClassName }) => {
   const [activeCard, setActiveCard] = useState(0);
@@ -53,8 +54,7 @@ const StickyScroll = ({ content, contentClassName }) => {
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
                 className="max-w-sm mt-4"
-              >
-              </motion.div>
+              ></motion.div>
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{
@@ -66,9 +66,27 @@ const StickyScroll = ({ content, contentClassName }) => {
                 {item.description}
               </motion.p>
               <Link to={`/tech-description/${index}`}>
-                <button className="bg-customBlue text-white text-bold px-7 py-2 mt-4 rounded-[50px] hover:bg-blue-600 transition duration-300" style={{fontWeight: "bold"}}>
-                  View Details
-                </button>
+                <Button
+                  sx={{
+                    width: 160, // w-40 -> 40 x 4 = 160px
+                    height: 40, // h-10 -> 10 x 4 = 40px
+                    borderRadius: "50px", // rounded-[50px]
+                    backgroundColor: "#1c44f1", // bg-customBlue -> Define customBlue in your theme
+                    border: 1,
+                    borderColor: "transparent", // border-transparent
+                    color: "white", // text-white
+                    fontSize: "0.875rem", // text-sm -> Tailwind's sm corresponds to ~14px
+                    fontWeight: "bold", // font-bold
+                    textTransform: "none", // uppercase
+                    marginTop: 3,
+                    "&:hover": {
+                      boxShadow: "0 0 20px 5px rgba(0, 0, 0, 0.2)", // Add glow effect on hover
+                      backgroundColor: "#1c44f1", // Hover background color
+                    },
+                  }}
+                >
+                  Read more
+                </Button>
               </Link>
             </div>
           ))}

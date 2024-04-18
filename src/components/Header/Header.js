@@ -27,7 +27,7 @@ const Header = () => {
           Revolutionizing <br />
           Industrial <br />
           <Box
-            component="span"
+            component="p"
             sx={{
               borderBottom: `10px solid ${underlineColor}`,
               display: "inline-block",
@@ -53,44 +53,48 @@ const Header = () => {
         </Typography>
         <Grid container pt={3}>
           <Grid item xs={12} md={6} justifyContent={"center"} display={"flex"}>
-            <Button
-              variant="contained"
-              sx={{
-                mt: 2,
-                borderRadius: 50,
-                backgroundColor: underlineColor,
-                fontWeight: "bold",
-                textTransform: "none",
-                padding: "10px 80px",
-                transition: "box-shadow 0.3s", // Add transition for box-shadow
-                "&:hover": {
-                  boxShadow: "0 0 20px 5px rgba(0, 0, 0, 0.2)", // Add glow effect on hover
+            <a href="/contact">
+              <Button
+                variant="contained"
+                sx={{
+                  mt: 2,
+                  borderRadius: 50,
                   backgroundColor: underlineColor,
-                },
-              }}
-            >
-              Book a Call
-            </Button>
+                  fontWeight: "bold",
+                  textTransform: "none",
+                  padding: "10px 80px",
+                  transition: "box-shadow 0.3s", // Add transition for box-shadow
+                  "&:hover": {
+                    boxShadow: "0 0 20px 5px rgba(0, 0, 0, 0.2)", // Add glow effect on hover
+                    backgroundColor: underlineColor,
+                  },
+                }}
+              >
+                Book a Call
+              </Button>
+            </a>
           </Grid>
           <Grid item xs={12} md={6} justifyContent={"center"} display={"flex"}>
-            <Button
-              variant="outlined"
-              sx={{
-                mt: 2,
-                borderRadius: 50,
-                color: underlineColor,
-                border: `2px solid ${underlineColor}`,
-                fontWeight: "bold",
-                textTransform: "none",
-                padding: "10px 80px",
-                "&:hover": {
-                  backgroundColor: underlineColor,
-                  color: "white",
-                },
-              }}
-            >
-              Join us
-            </Button>
+            <a href="/joinus">
+              <Button
+                variant="outlined"
+                sx={{
+                  mt: 2,
+                  borderRadius: 50,
+                  color: underlineColor,
+                  border: `2px solid ${underlineColor}`,
+                  fontWeight: "bold",
+                  textTransform: "none",
+                  padding: "10px 80px",
+                  "&:hover": {
+                    backgroundColor: underlineColor,
+                    color: "white",
+                  },
+                }}
+              >
+                Join us
+              </Button>
+            </a>
           </Grid>
         </Grid>
       </Grid>

@@ -12,7 +12,7 @@
 }
 
 .slick-list {
-  padding: 35px 10px !important; /* Ajusta esto para evitar que se corte por los bordes */
+
   margin: 0 auto; /* Centra el carrusel en su contenedor */
 }
 
@@ -25,7 +25,6 @@
 @media (max-width: 768px) {
   .contenedor-del-carrusel {
     overflow: visible;
-    padding: 15px 0;
   }
 
   .slick-center {
