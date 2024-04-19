@@ -23,35 +23,35 @@ export const TeamCarousel = () => {
       image: A7,
       title: "Detailed maps for industry",
       description:
-        "Creation of detailed, real-time maps for dynamic environments, enabling precise localization and path planning for automated systems.",
+        "We create detailed, real-time maps for dynamic environments, enabling precise localization and path planning for automated systems.",
       imageUrl: A7,
     },
     {
       image: A8,
       title: "Autonomous Industrial Vehicles ",
       description:
-        "Creation of detailed, real-time maps for dynamic environments, enabling precise localization and path planning for automated systems.",
+        "We design, build, and implement autonomous industrial vehicles, ranging from small automated mobile robots (AMRs) to metallurgical transfer cars.",
       imageUrl: A8,
     },
     {
       image: A9,
       title: "Autonomous Head Cranes",
       description:
-        "Creation of detailed, real-time maps for dynamic environments, enabling precise localization and path planning for automated systems.",
+        "By implementing SLAM technologies, we ensure precise movements and decisions in load handling for efficient and secure operations.",
       imageUrl: A9,
     },
     {
       image: A10,
       title: "Anti Sway for Outside environments",
       description:
-        "Creation of detailed, real-time maps for dynamic environments, enabling precise localization and path planning for automated systems.",
+        "Our redundant control algorithms blend the power and precision of Back EMF systems with the versatility of Lidar Control Systems, guaranteeing excellent performance in rough environments that port cranes may encounter.",
       imageUrl: A10,
     },
     {
       image: A10,
       title: "Personalized Control Systems Design",
       description:
-        "Creation of detailed, real-time maps for dynamic environments, enabling precise localization and path planning for automated systems.",
+        "We cater to specific needs, from migrating algorithms into new electronic components to modeling client- specific needs and algorithm designs into the client's existing cranes and components.",
       imageUrl: A10,
     },
   ];
