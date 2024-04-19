@@ -3,10 +3,12 @@ import "./Menu.css";
 import logoSrcBlack from "../../assets/images/logo/orza-logo.png";
 import logoSrcWhite from "../../assets/images/logo/orza-logo-white.png";
 import { Box } from "@mui/material";
+import {useNavigate} from "react-router-dom";
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [buttonText, setButtonText] = useState("Menu");
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     const menuContainer = document.querySelector('.menu-container');
@@ -50,20 +52,7 @@ const Menu = () => {
       }, index * 100);
     });
   };
-  const scrollToSection = (sectionId) => {
-    setTimeout(() => {
-      const section = document.getElementById(sectionId);
-      if (section) {
-        const yOffset = -100;
-        const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-        window.scrollTo({ top: y, behavior: 'smooth' });
-  
-        setIsOpen(false);
-      
-        animateTextChange("Menu");
-      }
-    }, 100);
-  };
+
 
   return (
     <div className={`menu-container ${isOpen ? "open" : ""}`}>
@@ -91,10 +80,10 @@ const Menu = () => {
       {isOpen && (
         <div className="menu-content">
           <ul className="menu-list">
-            <li className="menu-item" onClick={() => scrollToSection("home")}>Home</li>
-            <li className="menu-item" onClick={() => scrollToSection("service")}>Service</li>
-            <li className="menu-item" onClick={() => scrollToSection("vision")}>Vision</li>
-            <li className="menu-item" onClick={() => scrollToSection("journey")}>Journey</li>
+            <li className="menu-item" onClick={() => navigate("/")}>Home</li>
+            <li className="menu-item" onClick={() => navigate("/vision")}>Vision</li>
+            <li className="menu-item" onClick={() => navigate("/journey")}>Journey</li>
+            <li className="menu-item" onClick={() => navigate("/joinus")}>Join Us</li>
           </ul>
         </div>
       )}

@@ -26,6 +26,33 @@ const fadeInVariants = {
 function Vision() {
   const [isLoading, setIsLoading] = useState(true);
 
+  const images = [
+    {
+      id: 1,
+      className: "md:col-span-2",
+      thumbnail:
+        "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      id: 2,
+      className: "md:col-span-1",
+      thumbnail:
+        "https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      id: 3,
+      className: "md:col-span-1",
+      thumbnail:
+        "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      id: 4,
+      className: "md:col-span-2",
+      thumbnail:
+        "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+  ];
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
@@ -57,7 +84,12 @@ function Vision() {
         viewport={{ once: true }}
         variants={fadeInVariants}
       >
-        <Header3 />
+        <Header3
+          mainTitle="Revolutionizing"
+          subTitle="Industrial"
+          bodyText="Robotics"
+          description="Step into the future with ORZA where advanced sensors and intelligent algorithms reclaim billions of hours for humanity. We're not just automating tasks; we're enhancing lives, making the inconceivable today an intuitive reality tomorrow."
+        />
       </motion.div>
       <Box
         sx={{
@@ -124,7 +156,7 @@ function Vision() {
         viewport={{ once: true }}
         variants={fadeInVariants}
       >
-        <ImageGrid />
+        <ImageGrid images={images} />
       </motion.div>
       <Footer visionText="Journey" visionHref="/journey" />
     </ThemeProvider>

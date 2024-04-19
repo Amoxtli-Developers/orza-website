@@ -13,8 +13,8 @@ const VisionText = () => {
       sx={{
         paddingRight: { xs: 5, sm: 15, md: 25 },
         paddingLeft: { xs: 5, sm: 15, md: 25 },
-        paddingTop: { xs: 2, sm: 5, md: 15 },
-        paddingBottom: { xs: 2, sm: 5, md: 10 },
+        paddingTop: { xs: 5, sm: 5, md: 15 },
+        paddingBottom: { xs: 5, sm: 5, md: 10 },
       }}
     >
       <Typography
