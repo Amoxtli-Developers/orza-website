@@ -2,6 +2,7 @@
 .slider-container {
   margin: 0 auto;
   overflow: hidden;
+
 }
 
 .slide {
@@ -10,3 +11,4 @@
   padding-right: 50px; /* Add padding to each slide */
   padding-left: 50px; /* Add padding to each slide */
 }
+

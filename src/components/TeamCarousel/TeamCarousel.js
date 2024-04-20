@@ -7,7 +7,7 @@ import "./TeamCarousel.css";
 import { styled } from "@mui/system";
 import { Grid } from "@mui/material";
 
-import A7 from "../../assets/images/A7.jpeg";
+import A7 from "../../assets/services/Industry Detailed Maps.png";
 import A8 from "../../assets/images/A8.jpeg";
 import A9 from "../../assets/images/A9.jpeg";
 import A10 from "../../assets/images/A10.png";

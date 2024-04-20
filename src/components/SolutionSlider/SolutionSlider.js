@@ -9,6 +9,39 @@ import uma from "../../assets/solutions/uma.jpeg";
 import la from "../../assets/solutions/la.webp";
 import id from "../../assets/solutions/id.jpeg";
 
+const PrevArrow = ({ onClick }) => (
+  <div
+    className="slick-prev"
+    onClick={onClick}
+    style={{
+      position: "absolute",
+      top: "50%",
+      left: "100px",
+      zIndex: 1,
+      transform: "translate(0, -50%)",
+    }}
+  >
+
+  </div>
+);
+
+const NextArrow = ({ onClick }) => (
+  <div
+    className="slick-next"
+    onClick={onClick}
+    style={{
+      position: "absolute",
+      top: "50%",
+      right: "100px",
+      zIndex: 1,
+      transform: "translate(0, -50%)",
+      color: "#1c44f1", // Set the color of the icon
+    }}
+  >
+  </div>
+);
+
+
 const SolutionsSlider = () => {
   const theme = useTheme(); // Get the theme object
 
@@ -38,9 +71,11 @@ const SolutionsSlider = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: theme.breakpoints.values.sm, // Adjusts when screen size is below 600px
+        breakpoint: theme.breakpoints.values.sm,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -49,7 +84,7 @@ const SolutionsSlider = () => {
         },
       },
       {
-        breakpoint: theme.breakpoints.values.md, // Adjusts when screen size is below 960px
+        breakpoint: theme.breakpoints.values.md,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
