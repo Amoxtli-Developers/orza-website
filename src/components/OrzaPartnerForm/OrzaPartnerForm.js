@@ -29,7 +29,7 @@ const OrzaPartnerForm = () => {
             component="h2"
             sx={{ fontWeight: "bold", mb: 4 }}
           >
-            Become a commercial partner with ORZA
+            Become a commercial partner with ORZA Tech
           </Typography>
           <TextField
             variant="outlined"
@@ -102,26 +102,26 @@ const OrzaPartnerForm = () => {
             }}
           />
           <Button
-          sx={{
-            mt: 2,
-            width: 160, // w-40 -> 40 x 4 = 160px
-            height: 40, // h-10 -> 10 x 4 = 40px
-            borderRadius: "50px", // rounded-[50px]
-            backgroundColor: "#1c44f1", // bg-customBlue -> Define customBlue in your theme
-            border: 1,
-            borderColor: "transparent", // border-transparent
-            color: "white", // text-white
-            fontSize: "0.875rem", // text-sm -> Tailwind's sm corresponds to ~14px
-            fontWeight: "bold", // font-bold
-            textTransform: "none", // uppercase
-            "&:hover": {
-              boxShadow: "0 0 20px 5px rgba(0, 0, 0, 0.2)", // Add glow effect on hover
-              backgroundColor: "#1c44f1", // Hover background color
-            },
-          }}
-        >
-          Send
-        </Button>
+            sx={{
+              mt: 2,
+              width: 160, // w-40 -> 40 x 4 = 160px
+              height: 40, // h-10 -> 10 x 4 = 40px
+              borderRadius: "50px", // rounded-[50px]
+              backgroundColor: "#1c44f1", // bg-customBlue -> Define customBlue in your theme
+              border: 1,
+              borderColor: "transparent", // border-transparent
+              color: "white", // text-white
+              fontSize: "0.875rem", // text-sm -> Tailwind's sm corresponds to ~14px
+              fontWeight: "bold", // font-bold
+              textTransform: "none", // uppercase
+              "&:hover": {
+                boxShadow: "0 0 20px 5px rgba(0, 0, 0, 0.2)", // Add glow effect on hover
+                backgroundColor: "#1c44f1", // Hover background color
+              },
+            }}
+          >
+            Send
+          </Button>
         </Grid>
         <Grid item xs={12} md={6}>
           <Card sx={{ borderRadius: "16px" }}>

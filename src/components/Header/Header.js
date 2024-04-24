@@ -53,7 +53,11 @@ const Header = () => {
         </Typography>
         <Grid container pt={3}>
           <Grid item xs={12} md={6} justifyContent={"center"} display={"flex"}>
-            <a href="/contact">
+            <a
+              href="https://calendly.com/aibravo-orzatech/talkwithorza"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Button
                 variant="contained"
                 sx={{

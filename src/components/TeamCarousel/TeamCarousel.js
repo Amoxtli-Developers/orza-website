@@ -7,10 +7,11 @@ import "./TeamCarousel.css";
 import { styled } from "@mui/system";
 import { Grid } from "@mui/material";
 
-import A7 from "../../assets/services/Industry Detailed Maps.png";
-import A8 from "../../assets/images/A8.jpeg";
-import A9 from "../../assets/images/A9.jpeg";
-import A10 from "../../assets/images/A10.png";
+import A7 from "../../assets/images/A7.png";
+import A8 from "../../assets/images/A8.png";
+import A9 from "../../assets/images/A9.png";
+import A12 from "../../assets/images/A12.webp";
+import A13 from "../../assets/images/A13.webp";
 
 export const TeamCarousel = () => {
   const StyledBox = styled("div")({
@@ -41,18 +42,18 @@ export const TeamCarousel = () => {
       imageUrl: A9,
     },
     {
-      image: A10,
+      image: A12,
       title: "Anti Sway for Outside environments",
       description:
         "Our redundant control algorithms blend the power and precision of Back EMF systems with the versatility of Lidar Control Systems, guaranteeing excellent performance in rough environments that port cranes may encounter.",
-      imageUrl: A10,
+      imageUrl: A12,
     },
     {
-      image: A10,
+      image: A13,
       title: "Personalized Control Systems Design",
       description:
         "We cater to specific needs, from migrating algorithms into new electronic components to modeling client- specific needs and algorithm designs into the client's existing cranes and components.",
-      imageUrl: A10,
+      imageUrl: A13,
     },
   ];
 

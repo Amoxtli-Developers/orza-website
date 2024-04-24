@@ -1,11 +1,7 @@
 import React from "react";
 import { Typography, Grid, IconButton, Box, Button } from "@mui/material";
-import {
-  Facebook,
-  Twitter,
-  Instagram,
-  ArrowForward,
-} from "@mui/icons-material"; // Import MUI icons
+import { ArrowForward, LinkedIn } from "@mui/icons-material"; // Import MUI icons
+import EmailIcon from "@mui/icons-material/Email";
 
 const VisionText = () => {
   return (
@@ -43,7 +39,7 @@ const VisionText = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Facebook
+              <EmailIcon
                 sx={{ color: "#1B44F1", fontSize: { xs: "40px", sm: "50px" } }}
               />
             </IconButton>
@@ -51,23 +47,11 @@ const VisionText = () => {
           <div>
             <IconButton
               variant="outlined"
-              href="https://twitter.com/example"
+              href="https://www.linkedin.com/company/orza-tech/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Twitter
-                sx={{ color: "#1B44F1", fontSize: { xs: "40px", sm: "50px" } }}
-              />
-            </IconButton>
-          </div>
-          <div>
-            <IconButton
-              variant="outlined"
-              href="https://www.instagram.com/example"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Instagram
+              <LinkedIn
                 sx={{ color: "#1B44F1", fontSize: { xs: "40px", sm: "50px" } }}
               />
             </IconButton>

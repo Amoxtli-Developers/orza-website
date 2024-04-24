@@ -23,8 +23,9 @@ export function CtaTex() {
         style={{ padding: "20px", maxWidth: "90%" }}
       >
         <TypewriterEffectSmooth words={words} />
-        <Typography variant="body1"
-          sx={{ width: "100%", fontSize: { xs: "16px", sm: "20px"}, pb: 7}}
+        <Typography
+          variant="body1"
+          sx={{ width: "100%", fontSize: { xs: "16px", sm: "20px" }, pb: 7 }}
         >
           The journey to freedom begins here, a pivotal moment that sets the
           stage for profound change. With each step forward, possibilities
@@ -55,7 +56,11 @@ export function CtaTex() {
               Join us
             </Button>
           </a>
-          <a href="/contact">
+          <a
+            href="https://calendly.com/aibravo-orzatech/talkwithorza"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button
               sx={{
                 width: 160, // w-40 -> 40 x 4 = 160px

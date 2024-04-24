@@ -5,9 +5,7 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import IconButton from "@mui/material/IconButton";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import EmailIcon from "@mui/icons-material/Email";
 import logoSrc from "../../assets/images/logo/orza-logo-white.png"; // Make sure the path is correct
 import { useNavigate } from "react-router-dom";
 
@@ -68,7 +66,7 @@ const Footer = ({ visionText, visionHref }) => {
             }}
           >
             <IconButton
-              href="https://www.linkedin.com/company/orzatech"
+              href="https://www.linkedin.com/company/orza-tech/"
               target="_blank"
               rel="noreferrer"
               color="inherit"
@@ -81,28 +79,11 @@ const Footer = ({ visionText, visionHref }) => {
               target="_blank"
               rel="noreferrer"
               color="inherit"
-              aria-label="Facebook"
+              aria-label="Email"
             >
-              <FacebookIcon />
+              <EmailIcon />
             </IconButton>
-            <IconButton
-              href="https://twitter.com/orzatech"
-              target="_blank"
-              rel="noreferrer"
-              color="inherit"
-              aria-label="Twitter"
-            >
-              <TwitterIcon />
-            </IconButton>
-            <IconButton
-              href="https://www.instagram.com/orzatech"
-              target="_blank"
-              rel="noreferrer"
-              color="inherit"
-              aria-label="Instagram"
-            >
-              <InstagramIcon />
-            </IconButton>
+            
           </Grid>
         </Grid>
       </Container>

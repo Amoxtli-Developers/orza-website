@@ -42,7 +42,7 @@ const OrzaClientForm = () => {
             component="h2"
             sx={{ fontWeight: "bold", mb: 4 }}
           >
-            Become a commercial partner with ORZA
+            Become a project client with ORZA Tech
           </Typography>
           <TextField
             variant="outlined"

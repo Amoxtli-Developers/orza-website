@@ -61,7 +61,7 @@ const StickyScroll = ({ content, contentClassName }) => {
                   opacity: activeCard === index ? 1 : 0.3,
                   fontSize: activeCard === index ? "20px" : "16px",
                 }}
-                className="text-black-500 mt-4"
+                className="text-black-500 mt-4 text-justify"
               >
                 {item.description}
               </motion.p>
