@@ -88,7 +88,7 @@ function Vision() {
           mainTitle="Automate"
           subTitle="the"
           bodyText="Future"
-          description="Step into the future with ORZA where advanced sensors and intelligent algorithms reclaim billions of hours for humanity. We're not just automating tasks; we're enhancing lives, making the inconceivable today an intuitive reality tomorrow."
+          description="Embodies ORZA's mission & vision to transform industries through advanced automation technologies. We develop innovative solutions that enhance efficiency and unlock new growth possibilities, shaping the future of automation today."
         />
       </motion.div>
       <Box
@@ -129,9 +129,10 @@ function Vision() {
       >
         <Header2
           title="ORZA's"
+          title2=""
           title3="mission & vision"
-          text1="ORZA is dedicated to revolutionizing industrial automation by pioneering advanced technological solutions. Our mission is to empower businesses globally through smart integration of cutting-edge algorithms and systems, driving sustainable growth and transformative progress in every sector we touch. We commit to continuously evolving our approach to meet and exceed the changing needs of industries worldwide."
-          text2="Our vision is to set the global standard for industrial automation, striving towards a future where our technology seamlessly integrates into every facet of human endeavor, enhancing efficiency and enabling unlimited potential. At ORZA, we envision a world where our innovations perpetually push the boundaries of what is possible, guiding us towards an ever-expanding horizon of discovery and excellence in automation."
+          text1="Our <strong style='color: #1c44f1;'>mission</strong> at ORZA is to revolutionize industrial automation by pioneering advanced technological solutions. We are dedicated to empowering businesses globally through the smart integration of cutting-edge algorithms and systems, driving sustainable growth and transformative progress in every sector we touch. We commit to continuously evolving our approach to meet and exceed the changing needs of industries worldwide."
+          text2="Our <strong style='color: #1c44f1;'>vision</strong> is to set the global standard for industrial automation, striving towards a future where our technology seamlessly integrates into every facet of human endeavor, enhancing efficiency and enabling unlimited potential. At ORZA, we envision a world where our innovations perpetually push the boundaries of what is possible, guiding us towards an ever-expanding horizon of discovery and excellence in automation."
           underlineColor="#1c44f1"
         />
       </motion.div>

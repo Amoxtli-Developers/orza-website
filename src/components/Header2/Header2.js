@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography, Grid, Box } from "@mui/material";
 
-const Header2 = ({ title,title2, title3, text1, text2, underlineColor }) => {
+const Header2 = ({ title, title2, title3, text1, text2, underlineColor }) => {
   return (
     <Box
       sx={{ maxWidth: "lg", margin: "auto", padding: { xs: 1, sm: 4, md: 6 } }}
@@ -19,7 +19,7 @@ const Header2 = ({ title,title2, title3, text1, text2, underlineColor }) => {
                 sm: "3.5rem",
                 md: "4.5rem",
                 lg: "80px",
-              }, // Adjusted for various breakpoints
+              },
             }}
           >
             <Box
@@ -28,10 +28,10 @@ const Header2 = ({ title,title2, title3, text1, text2, underlineColor }) => {
                 borderBottom: `10px solid ${underlineColor}`,
                 pb: { xs: 1, sm: 2 },
                 display: "inline-block",
-              }} // Adjusted underline and padding for breakpoints
+              }}
             >
               {title}
-            </Box>{" "}
+            </Box>
             {title2} <br />
             {title3}
           </Typography>
@@ -39,22 +39,16 @@ const Header2 = ({ title,title2, title3, text1, text2, underlineColor }) => {
         <Grid item xs={12} md={6}>
           <Typography
             variant="body1"
-            sx={{
-              fontSize: { xs: "1rem", sm: "1.25rem", md: "1.5rem" }, // Adjusted for various breakpoints
-            }}
-          >
-            {text1}
-          </Typography>
+            sx={{ fontSize: { xs: "1rem", sm: "1.25rem", md: "1.5rem" } }}
+            dangerouslySetInnerHTML={{ __html: text1 }} // Allow HTML to render styled text
+          />
         </Grid>
         <Grid item xs={12} md={6}>
           <Typography
             variant="body1"
-            sx={{
-              fontSize: { xs: "1rem", sm: "1.25rem", md: "1.5rem" }, // Adjusted for various breakpoints
-            }}
-          >
-            {text2}
-          </Typography>
+            sx={{ fontSize: { xs: "1rem", sm: "1.25rem", md: "1.5rem" } }}
+            dangerouslySetInnerHTML={{ __html: text2 }} // Allow HTML to render styled text
+          />
         </Grid>
       </Grid>
     </Box>
