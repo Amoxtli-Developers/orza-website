@@ -3,8 +3,7 @@ import { Typography, Grid } from "@mui/material";
 import { TextGenerateEffect } from "../TextEffect/TextEffect"; // Import the TextGenerateEffect component
 
 const Quote = () => {
-  const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows.`;
-
+  const words = `At ORZA, we believe in the convergence of human talent and technological innovation. Drawing from my experiences on the tennis court, I've learned that each small victory is a step toward larger success. We apply this principle to our work, striving for excellence in every project and every solution we develop. We are not just automating processes; we are enhancing them with high-quality, AI-driven modular solutions, closely integrated with our clients’ production systems. This approach ensures that our clients are not only competitors but leaders in their industries. Our commitment to high-quality innovation is unwavering because we know that our clients' success is our success. At ORZA, we make it our mission to empower businesses, helping them grow sustainably and effectively. By making each client a winner, we create an environment where our own team members flourish. Together, we are redefining the future of industrial automation, making the once inconceivable a tangible reality.`;
   return (
     <Grid
       container

@@ -75,7 +75,7 @@ const Footer = ({ visionText, visionHref }) => {
               <LinkedInIcon />
             </IconButton>
             <IconButton
-              href="https://www.facebook.com/orzatech"
+              href="mailto:contact@orzatech.com"
               target="_blank"
               rel="noreferrer"
               color="inherit"
@@ -83,7 +83,6 @@ const Footer = ({ visionText, visionHref }) => {
             >
               <EmailIcon />
             </IconButton>
-            
           </Grid>
         </Grid>
       </Container>

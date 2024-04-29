@@ -94,11 +94,7 @@ function Home() {
         animate={inViewImage ? "visible" : "hidden"}
         variants={fadeInUp}
       >
-        <img
-          src={A11}
-          alt="A11"
-          style={{ width: "100%", height: "auto"}}
-        />
+        <img src={A11} alt="A11" style={{ width: "100%", height: "auto" }} />
       </motion.div>
       <motion.div
         ref={refHeader2}
@@ -108,6 +104,8 @@ function Home() {
       >
         <Header2
           title="Revolutionizing"
+          title2="the"
+          title3="Fabric of Industry"
           text1="We embark on this mission with a singular focus: to redefine the landscape of industrial automation. By blending the power of intelligent algorithms with state-of-the-art technologies in vision, mapping, localization, LiDAR, and object detection,"
           text2="we're setting new benchmarks for productivity, efficiency, and safety. Our robots are more than machines—they are harbingers of an industrial renaissance."
           underlineColor="#1c44f1"

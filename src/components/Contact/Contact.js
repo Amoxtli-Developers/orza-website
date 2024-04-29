@@ -18,7 +18,7 @@ const Contact = () => {
         tempor incididunt.
       </Typography>
       <Stack direction="row" spacing={2} justifyContent="center">
-        <IconButton aria-label="Email" sx={{ color: "#1c44f1" }}>
+        <IconButton href="mailto:contact@orzatech.com" target="_blank" aria-label="Email" sx={{ color: "#1c44f1" }}>
           <EmailIcon sx={{ fontSize: "50px" }} />
         </IconButton>
         <a

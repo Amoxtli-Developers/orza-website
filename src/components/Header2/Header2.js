@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography, Grid, Box } from "@mui/material";
 
-const Header2 = ({ title, text1, text2, underlineColor }) => {
+const Header2 = ({ title,title2, title3, text1, text2, underlineColor }) => {
   return (
     <Box
       sx={{ maxWidth: "lg", margin: "auto", padding: { xs: 1, sm: 4, md: 6 } }}
@@ -32,8 +32,8 @@ const Header2 = ({ title, text1, text2, underlineColor }) => {
             >
               {title}
             </Box>{" "}
-            the <br />
-            Fabric of Industry
+            {title2} <br />
+            {title3}
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>

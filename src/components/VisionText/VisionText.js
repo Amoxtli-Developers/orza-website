@@ -35,7 +35,7 @@ const VisionText = () => {
           <div>
             <IconButton
               variant="outlined"
-              href="https://www.facebook.com/example"
+              href="mailto:contact@orzatech.com"
               target="_blank"
               rel="noopener noreferrer"
             >

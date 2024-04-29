@@ -25,13 +25,16 @@ export function CtaTex() {
         <TypewriterEffectSmooth words={words} />
         <Typography
           variant="body1"
-          sx={{ width: "100%", fontSize: { xs: "16px", sm: "20px" }, pb: 7 }}
+          sx={{
+            width: "100%",
+            fontSize: { xs: "16px", sm: "30px" },
+            pb: 7,
+            textAlign: "center",
+          }}
         >
-          The journey to freedom begins here, a pivotal moment that sets the
-          stage for profound change. With each step forward, possibilities
-          unfold, offering glimpses of liberation and self-realization. Embrace
-          this journey with courage and openness, knowing that every stride
-          brings you closer to a life of authenticity and fulfillment.
+          Ready to transform your industry? Join ORZA today and lead the
+          revolution in intelligent automation. Let's create the future—
+          together!
         </Typography>
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
           <a href="/joinus">

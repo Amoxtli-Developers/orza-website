@@ -85,9 +85,9 @@ function Vision() {
         variants={fadeInVariants}
       >
         <Header3
-          mainTitle="Revolutionizing"
-          subTitle="Industrial"
-          bodyText="Robotics"
+          mainTitle="Automate"
+          subTitle="the"
+          bodyText="Future"
           description="Step into the future with ORZA where advanced sensors and intelligent algorithms reclaim billions of hours for humanity. We're not just automating tasks; we're enhancing lives, making the inconceivable today an intuitive reality tomorrow."
         />
       </motion.div>
@@ -128,9 +128,10 @@ function Vision() {
         variants={fadeInVariants}
       >
         <Header2
-          title="Revolutionizing"
-          text1="We embark on this mission with a singular focus: to redefine the landscape of industrial automation..."
-          text2="Our robots are more than machines—they are harbingers of an industrial renaissance."
+          title="ORZA's"
+          title3="mission & vision"
+          text1="ORZA is dedicated to revolutionizing industrial automation by pioneering advanced technological solutions. Our mission is to empower businesses globally through smart integration of cutting-edge algorithms and systems, driving sustainable growth and transformative progress in every sector we touch. We commit to continuously evolving our approach to meet and exceed the changing needs of industries worldwide."
+          text2="Our vision is to set the global standard for industrial automation, striving towards a future where our technology seamlessly integrates into every facet of human endeavor, enhancing efficiency and enabling unlimited potential. At ORZA, we envision a world where our innovations perpetually push the boundaries of what is possible, guiding us towards an ever-expanding horizon of discovery and excellence in automation."
           underlineColor="#1c44f1"
         />
       </motion.div>
