@@ -94,7 +94,7 @@ function Home() {
         animate={inViewImage ? "visible" : "hidden"}
         variants={fadeInUp}
       >
-        <img src={A11} alt="A11" style={{ width: "100%", height: "auto" }} />
+        <img src={A11} alt="A11" style={{ width: "100%", height: "auto", objectFit: "cover" }} />
       </motion.div>
       <motion.div
         ref={refHeader2}

@@ -18,6 +18,7 @@ const LayoutGrid = ({ cards }) => {
             className={
               "relative overflow-hidden bg-white rounded-[20px] h-full w-full"
             }
+            style={{ objectFit: "cover" }}
           >
             <BlurImage card={card} />
           </div>

@@ -4,7 +4,11 @@ import { motion } from "framer-motion";
 import Menu from "../components/Menu/Menu";
 import Footer from "../components/Footer/Footer";
 import Header3 from "../components/Header3/Header3";
-import A11 from "../assets/images/A11.webp";
+import A1 from "../assets/vision/A1.webp";
+import A2 from "../assets/vision/A2.webp";
+import A3 from "../assets/vision/A3.webp";
+import A4 from "../assets/vision/A4.webp";
+import A5 from "../assets/vision/A5.webp";
 import Quote from "../components/Quote/Quote";
 import Header2 from "../components/Header2/Header2";
 import Video from "../components/Video/Video";
@@ -30,26 +34,22 @@ function Vision() {
     {
       id: 1,
       className: "md:col-span-2",
-      thumbnail:
-        "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      thumbnail: A2,
     },
     {
       id: 2,
       className: "md:col-span-1",
-      thumbnail:
-        "https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      thumbnail: A3,
     },
     {
       id: 3,
       className: "md:col-span-1",
-      thumbnail:
-        "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      thumbnail: A4,
     },
     {
       id: 4,
       className: "md:col-span-2",
-      thumbnail:
-        "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      thumbnail: A5,
     },
   ];
 
@@ -101,7 +101,7 @@ function Vision() {
         }}
       >
         <img
-          src={A11}
+          src={A1}
           alt="A11"
           style={{
             width: "100%",
@@ -110,6 +110,7 @@ function Vision() {
             display: "block",
             maxHeight: "600px",
             borderRadius: "20px",
+            objectFit: "cover",
           }}
         />
       </Box>
