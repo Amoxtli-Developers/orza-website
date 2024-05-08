@@ -8,6 +8,7 @@ import A5 from "../../assets/technologies/A5.png";
 import A6 from "../../assets/technologies/A6.png";
 import A7 from "../../assets/technologies/A7.png";
 
+
 const content = [
   {
     title: "SDV Vehículo autónomo",

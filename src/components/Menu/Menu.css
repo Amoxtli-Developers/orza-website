@@ -33,6 +33,7 @@
     opacity: 4;
   }
 }
+
 span .text-animation {
   font-size: 16px;
 }
@@ -138,8 +139,8 @@ span .text-animation {
 }
 
 .menu-button:hover {
-  transform: scale(1)!important;
-  transition: ease 0.3s!important;
+  transform: scale(1) !important;
+  transition: ease 0.3s !important;
 }
 
 .menu-content,
@@ -237,6 +238,36 @@ span .text-animation {
 }
 
 /* Menu RESPONSIVE */
+@media (max-width: 992px) {
+  .menu-header h1 {
+    margin-left: 1rem;
+  }
+
+  .menu-button-container span {
+    font-size: 16px;
+  }
+
+  .menu-item {
+    font-size: 40px;
+    padding: 0.5rem;
+  }
+
+  .menu-footer {
+    margin-left: 0;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .menu-list {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-list::before,
+  .menu-list::after {
+    content: none;
+  }
+}
+
 @media (max-width: 768px) {
   .menu-header h1 {
     margin-left: 1rem;

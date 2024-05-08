@@ -17,7 +17,7 @@ const Quote = () => {
       }}
     >
 
-      <Grid item xs={12} md={2}>
+      <Grid item xs={12} md={12} lg={2}>
         <Typography
           id="home"
           variant="h6"
@@ -39,7 +39,7 @@ const Quote = () => {
           </Typography>
         </Typography>
       </Grid>
-      <Grid item xs={12} md={10} >
+      <Grid item xs={12} md={12} lg={10} >
         <TextGenerateEffect words={words} />
       </Grid>
     </Grid>

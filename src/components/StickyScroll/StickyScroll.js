@@ -3,6 +3,7 @@ import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
+import { Card} from "@mui/material";
 
 const StickyScroll = ({ content, contentClassName }) => {
   const [activeCard, setActiveCard] = useState(0);
@@ -31,13 +32,13 @@ const StickyScroll = ({ content, contentClassName }) => {
 
   return (
     <motion.div
-      className="h-[20rem] w-full overflow-y-auto flex justify-center rounded-md p-5"
+      className="h-[30rem] w-full overflow-y-auto flex justify-center rounded-md p-5"
       ref={ref}
     >
-      <div className="div relative flex items-start px-4">
+      <div className="div relative flex items-start " style={{paddingBottom: "5rem"}}>
         <div className="max-w-5xl">
           {content.map((item, index) => (
-            <div key={item.title + index} className="my-20">
+            <Card key={item.title + index} className="shadow-lg" sx={{padding: "3rem", borderRadius: "20px", marginBottom: "3rem", marginRight: "1rem"}}>
               <motion.h2
                 initial={{ opacity: 0 }}
                 animate={{
@@ -88,13 +89,13 @@ const StickyScroll = ({ content, contentClassName }) => {
                   Read more
                 </Button>
               </Link>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
       <motion.div
         className={
-          "hidden lg:block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden " +
+          "hidden lg:block h-60 w-80 rounded-md bg-white sticky top-10  " +
           contentClassName
         }
       >
