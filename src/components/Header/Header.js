@@ -20,7 +20,7 @@ const Header = () => {
           gutterBottom
           sx={{
             fontWeight: "bold",
-            fontSize: { xs: "2.5rem", sm: "4rem", md: "6rem", lg: "100px" }, // Adjusted for various breakpoints
+            fontSize: { xs: "2.5rem", sm: "3rem", md: "3rem", lg: "70px" }, // Adjusted for various breakpoints
             textAlign: { xs: "center", md: "left" }, // Center text on small screens
           }}
         >
@@ -41,7 +41,7 @@ const Header = () => {
         <Typography
           variant="body1"
           sx={{
-            fontSize: { xs: "1rem", sm: "1.25rem", md: "1.5rem", lg: "25px" }, // Adjusted for various breakpoints
+            fontSize: { xs: "1rem", sm: "1.25rem", md: "1.25rem", lg: "25px" }, // Adjusted for various breakpoints
             paddingTop: { xs: 2, md: 10 }, // Adjusted padding top for xs devices
             textAlign: { xs: "center", md: "left" }, // Center text on small screens
           }}

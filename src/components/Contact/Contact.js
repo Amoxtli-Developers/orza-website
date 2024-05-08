@@ -14,8 +14,7 @@ const Contact = () => {
         Contact Us
       </Typography>
       <Typography variant="body1" sx={{ mb: 4, fontSize: "30px" }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt.
+      Got questions? We're here to help. Contact us to learn more about how ORZA Tech can support your goals.
       </Typography>
       <Stack direction="row" spacing={2} justifyContent="center">
         <IconButton href="mailto:contact@orzatech.com" target="_blank" aria-label="Email" sx={{ color: "#1c44f1" }}>

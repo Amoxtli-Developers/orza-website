@@ -6,10 +6,11 @@ const LayoutGrid = ({ cards }) => {
     <div
       className=" grid grid-cols-1 md:grid-cols-3 mx-auto gap-4 relative"
       style={{
-        height: "90vh",
+        height: "100vh",
         paddingRight: "50px",
         paddingLeft: "50px",
         paddingTop: "30px",
+        paddingBottom: "50px",
       }}
     >
       {cards.map((card, i) => (
@@ -33,11 +34,11 @@ const BlurImage = ({ card }) => {
   return (
     <img
       src={card.thumbnail}
-      height="500"
+      height="1000"
       width="500"
       onLoad={() => setLoaded(true)}
       className={
-        "object-cover object-top absolute inset-0 h-full w-full transition duration-200 " +
+        "absolute h-full w-full transition duration-200 " +
         (loaded ? "blur-none" : "blur-md")
       }
       alt="thumbnail"

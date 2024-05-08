@@ -50,7 +50,7 @@ const Solutions = ({ imageUrl, title, description }) => {
           gutterBottom
           sx={{
             fontWeight: "bold",
-            fontSize: isMobile ? "30px" : "80px", // Responsive font size
+            fontSize: { xs: "30px", sm: "2rem", md: "2.5rem", lg: "60px" }, // Responsive font size
             color: "white",
           }}
         >
@@ -60,7 +60,7 @@ const Solutions = ({ imageUrl, title, description }) => {
           variant="body2"
           component="p"
           sx={{
-            fontSize: isMobile ? "10px" : "25px", // Smaller font on mobile
+            fontSize: { xs: "10px", sm: "12px", md: "15px", lg: "20px" }, // Responsive font size
           }}
         >
           {description}

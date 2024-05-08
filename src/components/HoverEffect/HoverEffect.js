@@ -43,7 +43,7 @@ export const HoverEffect = ({ items, className }) => {
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle>{item.title}</CardTitle>
+          <CardTitle src={item.titleImage} />
             <CardDescription>{item.description}</CardDescription>
           </Card>
         </a>
@@ -67,18 +67,16 @@ export const Card = ({ className, children }) => {
   );
 };
 
-export const CardTitle = ({ className, children }) => {
+export const CardTitle = ({ className, src }) => {
   return (
-    <h4
-      className={classNames(
-        "text-customBlue-500 dark:text-customBlue font-bold tracking-wide mt-4 text-lg",
-        className
-      )}
-    >
-      {children}
-    </h4>
+    <img
+      src={src}
+      alt="Company Logo"
+      className={classNames("h-12 w-auto mx-auto my-4", className)} // Customize size and margins as needed
+    />
   );
 };
+
 
 export const CardDescription = ({ className, children }) => {
   return (

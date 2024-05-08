@@ -21,9 +21,19 @@ function Journey() {
 
   const timeCardData = [
     {
-      year: "2020",
-      title: "First Event",
-      description: "Description for the first event.",
+      year: "2017",
+      title: "VantTec",
+      description: "Formation of VantTec at Tecnológico de Monterrey by a group of visionary students with the mission to revolutionize the autonomous vehicle industry.",
+      images: [
+        "https://via.placeholder.com/150",
+        "https://via.placeholder.com/150",
+        "https://via.placeholder.com/150",
+      ],
+    },
+    {
+      year: "2017",
+      title: "First Steps",
+      description: "Period of initial development where VantTec focused on designing and building diverse autonomous vehicles including drones, boats, and submarines.",
       images: [
         "https://via.placeholder.com/150",
         "https://via.placeholder.com/150",
@@ -32,8 +42,8 @@ function Journey() {
     },
     {
       year: "2020",
-      title: "First Event",
-      description: "Description for the first event.",
+      title: "RoboBoat Competition",
+      description: "VantTec won 1st place overall, showcasing their advanced capabilities in the design and operation of autonomous boats.",
       images: [
         "https://via.placeholder.com/150",
         "https://via.placeholder.com/150",
@@ -42,18 +52,8 @@ function Journey() {
     },
     {
       year: "2020",
-      title: "First Event",
-      description: "Description for the first event.",
-      images: [
-        "https://via.placeholder.com/150",
-        "https://via.placeholder.com/150",
-        "https://via.placeholder.com/150",
-      ],
-    },
-    {
-      year: "2020",
-      title: "First Event",
-      description: "Description for the first event.",
+      title: "Rómulo Garza Award",
+      description: "Received this prestigious award for their contributions to robotics, automation, and AI research, cementing their status as innovation leaders.",
       images: [
         "https://via.placeholder.com/150",
         "https://via.placeholder.com/150",

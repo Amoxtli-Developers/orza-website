@@ -14,8 +14,8 @@ const OrzaTeamForm = () => {
     >
       <Title name={"Be part of our TEAM"} />
       <Typography variant="body1" sx={{ mb: 4 }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore.
+        Build the future with us! We’re looking for innovative minds eager to
+        push the boundaries of automation and technology.
       </Typography>
       <Stack direction="column" spacing={2} mb={2}>
         <TextField

@@ -72,10 +72,10 @@ function JoinUs() {
         variants={fadeInVariants}
       >
         <Header3
-          mainTitle="Revolutionizing"
-          subTitle="Industrial"
-          bodyText="Robotics"
-          description="Step into the future with ORZA where advanced sensors and intelligent algorithms reclaim billions of hours for humanity. We're not just automating tasks; we're enhancing lives, making the inconceivable today an intuitive reality tomorrow."
+          mainTitle="Join"
+          subTitle="Our"
+          bodyText="Mission"
+          description="Dive into the forefront of industrial automation. Join ORZA Tech in transforming industries worldwide"
         />
       </motion.div>
       <motion.div
