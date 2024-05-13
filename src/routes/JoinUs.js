@@ -5,7 +5,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Footer from "../components/Footer/Footer";
 import Header3 from "../components/Header3/Header3";
 import { motion } from "framer-motion";
-import A11 from "../assets/images/A11.webp";
+import A1 from "../assets/joinus/A1.jpg";
 import OrzaTeamForm from "../components/OrzaTeamForm/OrzaTeamForm";
 import OrzaPartnerForm from "../components/OrzaPartnerForm/OrzaPartnerForm";
 import OrzaClientForm from "../components/OrzaClientForm/OrzaClientForm";
@@ -75,7 +75,7 @@ function JoinUs() {
           mainTitle="Join"
           subTitle="Our"
           bodyText="Mission"
-          description="Dive into the forefront of industrial automation. Join ORZA Tech in transforming industries worldwide"
+          description="Step into the future of industrial automation with ORZA Tech. Collaborate with us to transform industries on a global scale and pioneer groundbreaking innovations."
         />
       </motion.div>
       <motion.div
@@ -94,7 +94,7 @@ function JoinUs() {
           }}
         >
           <img
-            src={A11}
+            src={A1}
             alt="A11"
             style={{
               width: "100%",
@@ -103,6 +103,7 @@ function JoinUs() {
               display: "block",
               maxHeight: "600px",
               borderRadius: "20px",
+              objectFit: "cover",
             }}
           />
         </Box>

@@ -9,7 +9,7 @@ import {
   CardMedia,
   Snackbar,
 } from "@mui/material";
-import orzalogo from "../../assets/images/logo/orza-logo.png";
+import A1 from "../../assets/joinus/form/A1.webp";
 
 const OrzaPartnerForm = () => {
   const [formData, setFormData] = useState({
@@ -293,7 +293,7 @@ const OrzaPartnerForm = () => {
           </Button>
         </Grid>
         <Grid item xs={12} md={6}>
-          <CardMedia component="img" image={orzalogo} alt="Partner Image" />
+          <CardMedia component="img" image={A1} alt="Partner Image" sx={{borderRadius: "20px"}}/>
         </Grid>
       </Grid>
       <Snackbar

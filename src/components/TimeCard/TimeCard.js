@@ -34,9 +34,7 @@ const TimeCard = ({ year, title, description, images }) => {
         >
           {year}
         </Typography>
-        <CardContent
-          sx={{ pt: { xs: 10, sm: 15, md: 20 }, px: { xs: 2, sm: 5, md: 20 } }}
-        >
+        <CardContent sx={{ pt: { xs: 10, sm: 15, md: 20 } }}>
           <Typography
             variant="h2"
             sx={{

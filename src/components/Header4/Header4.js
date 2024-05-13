@@ -1,10 +1,18 @@
 import React from "react";
 import { Card, CardMedia, Typography, Box, Grid } from "@mui/material";
+import A1 from "../../assets/journey/A1.webp"; // Replace with your image path
 
 const Header4 = () => {
   return (
-    <Box sx={{ p: { xs: 5, sm: 5, md: 5 } }}>
-      <Grid container spacing={2} sx={{ justifyContent: "center" }}>
+    <Box sx={{ m: { xs: 2, sm: 3, md: 4, lg: 5 } }}>
+      <Grid
+        container
+        spacing={2}
+        sx={{
+          justifyContent: "center",
+          padding: { xs: 1, sm: 2, md: 3, lg: 4 },
+        }}
+      >
         <Grid
           item
           xs={12}
@@ -16,8 +24,8 @@ const Header4 = () => {
           <Card sx={{ borderRadius: "20px" }}>
             <CardMedia
               component="img"
-              image="path_to_your_image.jpg" // Replace with your image path
-              alt="Image description"
+              image={A1} // Replace with your image path
+              alt="orza journey"
               sx={{
                 width: "100%",
                 height: "100%",
@@ -35,14 +43,47 @@ const Header4 = () => {
           lg={9}
           sx={{ display: "flex", alignItems: "center" }}
         >
-          <Box>
-            <Typography variant="h3" component="h1" gutterBottom sx={{fontWeight: "bold"}}>
-              Lorem ipsum dolor sit amet consecte
+          <Box
+            sx={{
+              padding: {
+                xs: 1, // small devices
+                sm: 2, // medium devices
+                md: 3, // larger devices
+                lg: 10, // largest screens
+              },
+            }}
+          >
+            <Typography
+              variant="h3"
+              component="h1"
+              gutterBottom
+              sx={{
+                fontWeight: "bold",
+                fontSize: {
+                  xs: "1.5rem", // small devices
+                  sm: "2rem", // medium devices
+                  lg: "5rem", // large devices
+                },
+                color: "#1B44F1",
+              }}
+            >
+              Celebrating Innovation and Excellence at Orza Tech
             </Typography>
-            <Typography variant="body1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
+            <Typography
+              variant="body1"
+              sx={{
+                fontSize: {
+                  xs: "0.8rem", // small devices
+                  sm: "1rem", // medium devices
+                  lg: "1.2rem", // large devices
+                },
+              }}
+            >
+              From its humble beginnings with the formation of VantTec in 2017,
+              Orza Tech has pioneered advancements in the autonomous vehicle
+              sector. Our journey through technological innovation led us to win
+              prestigious competitions and awards, solidifying our position as
+              leaders in the field of robotics and automation.
             </Typography>
           </Box>
         </Grid>

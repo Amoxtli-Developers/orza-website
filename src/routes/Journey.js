@@ -7,6 +7,14 @@ import TimeCard from "../components/TimeCard/TimeCard";
 import Header4 from "../components/Header4/Header4";
 import { TracingBeam } from "../components/TracingBeam/TracingBeam";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import van1 from "../assets/journey/timeline/van1.webp";
+import van2 from "../assets/journey/timeline/van2.webp";
+
+import firstVan from "../assets/journey/timeline/firstvan1.webp";
+
+import boat1 from "../assets/journey/timeline/boat1.webp";
+
+import garza1 from "../assets/journey/timeline/garza1.webp";
 
 const theme2 = createTheme({
   typography: {
@@ -25,9 +33,9 @@ function Journey() {
       title: "VantTec",
       description: "Formation of VantTec at Tecnológico de Monterrey by a group of visionary students with the mission to revolutionize the autonomous vehicle industry.",
       images: [
-        "https://via.placeholder.com/150",
-        "https://via.placeholder.com/150",
-        "https://via.placeholder.com/150",
+        van1,
+        van2,
+
       ],
     },
     {
@@ -35,9 +43,7 @@ function Journey() {
       title: "First Steps",
       description: "Period of initial development where VantTec focused on designing and building diverse autonomous vehicles including drones, boats, and submarines.",
       images: [
-        "https://via.placeholder.com/150",
-        "https://via.placeholder.com/150",
-        "https://via.placeholder.com/150",
+        firstVan,
       ],
     },
     {
@@ -45,9 +51,7 @@ function Journey() {
       title: "RoboBoat Competition",
       description: "VantTec won 1st place overall, showcasing their advanced capabilities in the design and operation of autonomous boats.",
       images: [
-        "https://via.placeholder.com/150",
-        "https://via.placeholder.com/150",
-        "https://via.placeholder.com/150",
+        boat1,
       ],
     },
     {
@@ -55,9 +59,7 @@ function Journey() {
       title: "Rómulo Garza Award",
       description: "Received this prestigious award for their contributions to robotics, automation, and AI research, cementing their status as innovation leaders.",
       images: [
-        "https://via.placeholder.com/150",
-        "https://via.placeholder.com/150",
-        "https://via.placeholder.com/150",
+        garza1,
       ],
     },
   ];
