@@ -15,6 +15,7 @@ import { Technologies } from "../components/Technologies/Technolgies";
 import SolutionSlider from "../components/SolutionSlider/SolutionSlider";
 import ClientCard from "../components/ClientCard/ClientCard";
 import { CtaTex } from "../components/Cta/CtaTex.js";
+import PartnerCard from "../components/PartnerCard/PartnerCard.js";
 
 const theme = createTheme({
   typography: {
@@ -125,6 +126,9 @@ function Home() {
         variants={fadeInUp}
       >
         <TeamCarousel />
+      </motion.div>
+      <motion.div>
+        <PartnerCard />
       </motion.div>
       <Title name={"ORZA Tech"} />
       <motion.div

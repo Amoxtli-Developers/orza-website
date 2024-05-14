@@ -1,11 +1,11 @@
 import React from "react";
 import { HoverEffect } from "../HoverEffect/HoverEffect"; // Import HoverEffect correctly
-import terniumLogo from "../../assets/home/ternium.png";
-import harscoLogo from "../../assets/home/harsco.png";
+import nvidiaLogo from "../../assets/home/nvidia.png";
+import danfossLogo from "../../assets/home/danfoss.png";
 import limserLogo from "../../assets/home/limser.png";
 import { Typography } from "@mui/material";
 
-function ClientCard() {
+function PartnerCard() {
   return (
     <div
       className="max-w-5xl mx-auto px-3"
@@ -22,8 +22,9 @@ function ClientCard() {
           padding: 0,
         }}
       >
-        Our Clients
+        Our Partners
       </Typography>
+
       <HoverEffect items={projects} />
     </div>
   );
@@ -31,16 +32,16 @@ function ClientCard() {
 
 const projects = [
   {
-    titleImage: terniumLogo,
+    titleImage: nvidiaLogo,
     description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: "https://mx.ternium.com/es",
+      "NVIDIA leads in AI and computing, advancing robotics with innovative GPU technology that enhances capabilities and transforms the industry.",
+    link: "https://www.nvidia.com/en-us/industries/robotics/",
   },
   {
-    titleImage: harscoLogo,
+    titleImage: danfossLogo,
     description:
-      "A global leader in environmental services and products, particularly for the steel and metals industries.",
-    link: "https://www.harsco-environmental.com",
+      "Danfoss engineers solutions for climate and energy efficiency, specializing in refrigeration, air conditioning, and more, promoting sustainable technologies.",
+    link: "https://www.danfoss.com/es-mx/ ",
   },
   {
     titleImage: limserLogo,
@@ -49,5 +50,5 @@ const projects = [
     link: "https://www.limsercranes.com/",
   },
 ];
-export default ClientCard; // Export ClientCard as default
+export default PartnerCard; // Export PartnerCard as default
 export { projects }; // Also export projects if needed
