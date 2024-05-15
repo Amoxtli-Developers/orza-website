@@ -32,7 +32,7 @@ const StickyScroll = ({ content, contentClassName }) => {
 
   return (
     <motion.div
-      className="h-[30rem] w-full overflow-y-auto flex justify-center rounded-md p-5"
+      className="h-[25rem] w-full overflow-y-auto flex justify-center rounded-md p-5"
       ref={ref}
     >
       <div className="div relative flex items-start " style={{paddingBottom: "5rem"}}>
@@ -80,6 +80,7 @@ const StickyScroll = ({ content, contentClassName }) => {
                     fontWeight: "bold", // font-bold
                     textTransform: "none", // uppercase
                     marginTop: 3,
+                    display:"none",
                     "&:hover": {
                       boxShadow: "0 0 20px 5px rgba(0, 0, 0, 0.2)", // Add glow effect on hover
                       backgroundColor: "#1c44f1", // Hover background color
