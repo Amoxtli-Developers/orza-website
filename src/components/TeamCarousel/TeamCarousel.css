@@ -4,6 +4,7 @@
 .slick-slider {
   width: 100%;
   margin: 0 auto; /* Centra el carrusel en su contenedor */
+  margin-bottom: 20px;
 }
 
 /* Opcional: oscurecer las diapositivas no centrales para enfocar más en la central */
