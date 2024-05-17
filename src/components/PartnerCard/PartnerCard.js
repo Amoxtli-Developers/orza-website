@@ -16,7 +16,7 @@ function PartnerCard() {
         gutterBottom
         sx={{
           textAlign: "center",
-          fontSize: { xs: "5px", sm: "10px", md: "30px" },
+          fontSize: { xs: "20px", sm: "20px", md: "30px" },
           color: "#1B44F1",
           fontWeight: "bold",
           padding: 0,

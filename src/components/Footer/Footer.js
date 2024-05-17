@@ -132,11 +132,13 @@ const Footer = ({ visionText, visionHref }) => {
                 mt: { xs: 2, sm: 0 },
               }}
             >
-              {["Home", "Service", "Vision", "Journey", "JoinUs"].map(
+              {["Home", "Service", "Vision", "Journey", "Join Us"].map(
                 (text) => (
                   <Typography
                     key={text}
-                    onClick={() => navigate(`/${text.toLowerCase()}`)}
+                    onClick={() =>
+                      navigate(`/${text.toLowerCase().replace(/\s+/g, "")}`)
+                    }
                     sx={{
                       cursor: "pointer",
                       p: 2,

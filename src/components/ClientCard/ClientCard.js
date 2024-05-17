@@ -16,7 +16,7 @@ function ClientCard() {
         gutterBottom
         sx={{
           textAlign: "center",
-          fontSize: { xs: "5px", sm: "10px", md: "30px" },
+          fontSize: { xs: "20px", sm: "20px", md: "30px" },
           color: "#1B44F1",
           fontWeight: "bold",
           padding: 0,
@@ -33,7 +33,7 @@ const projects = [
   {
     titleImage: terniumLogo,
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "Ternium is a major steel producer in the Americas, serving the manufacturing and construction sectors.",
     link: "https://mx.ternium.com/es",
   },
   {

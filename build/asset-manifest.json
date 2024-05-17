@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.261853b6.css",
-    "main.js": "/static/js/main.3771e585.js",
+    "main.css": "/static/css/main.ff16f472.css",
+    "main.js": "/static/js/main.11ea8103.js",
     "static/js/453.b206c0ad.chunk.js": "/static/js/453.b206c0ad.chunk.js",
     "static/media/A9.png": "/static/media/A9.dccf065293fd76988a3f.png",
     "static/media/A7.png": "/static/media/A7.32871ed848b595b7e206.png",
@@ -28,7 +28,9 @@
     "static/media/A2.png": "/static/media/A2.af93be06bb23a0f0c4d1.png",
     "static/media/id.jpeg": "/static/media/id.05ec3a77898626950f3c.jpeg",
     "static/media/la.webp": "/static/media/la.1fa6475686550b0be789.webp",
+    "static/media/danfoss.png": "/static/media/danfoss.663c3fa8d96343a822c1.png",
     "static/media/harsco.png": "/static/media/harsco.2c6bb7d71a12b1f0aa3b.png",
+    "static/media/nvidia.png": "/static/media/nvidia.8816b25d1888ddf335de.png",
     "static/media/orza-logo.png": "/static/media/orza-logo.e9d27f41481829f03db2.png",
     "static/media/orza-logo-white.png": "/static/media/orza-logo-white.0b351adc523d800f0a90.png",
     "static/media/limser.png": "/static/media/limser.5360131b60ddf5dc0a99.png",
@@ -38,12 +40,12 @@
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "main.261853b6.css.map": "/static/css/main.261853b6.css.map",
-    "main.3771e585.js.map": "/static/js/main.3771e585.js.map",
+    "main.ff16f472.css.map": "/static/css/main.ff16f472.css.map",
+    "main.11ea8103.js.map": "/static/js/main.11ea8103.js.map",
     "453.b206c0ad.chunk.js.map": "/static/js/453.b206c0ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.261853b6.css",
-    "static/js/main.3771e585.js"
+    "static/css/main.ff16f472.css",
+    "static/js/main.11ea8103.js"
   ]
 }

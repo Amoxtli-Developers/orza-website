@@ -30,9 +30,9 @@ const Header2 = ({ title, title2, title3, text1, text2, underlineColor }) => {
                 display: "inline-block",
               }}
             >
-              {title}
+              {title + " "}
             </Box>
-            {title2} <br />
+            {" "} {title2} <br />
             {title3}
           </Typography>
         </Grid>
